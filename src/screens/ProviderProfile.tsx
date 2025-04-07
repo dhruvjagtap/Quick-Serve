@@ -14,19 +14,7 @@ const ProviderProfile = ({ route, navigation }: any) => {
 
         <Text style={styles.name}>{provider.name}</Text>
         <Text style={styles.profession}>{provider.profession}</Text>
-        <Text style={styles.info}>💰 Fees: ₹{provider.fees}</Text>
-        <Text style={styles.info}>⭐ Rating: {provider.rating} / 5.0</Text>
-        <Text style={styles.info}>🔧 Experience: {provider.experience_years} years</Text>
-        <Text style={styles.info}>📍 Location: {provider.location}</Text>
-
-        <Text style={styles.heading}>Customer Reviews:</Text>
-        {provider.reviews.map((review: any, index: number) => (
-          <View key={index} style={styles.review}>
-            <Text style={styles.reviewName}>{review.customer_name}:</Text>
-            <Text style={styles.reviewText}>{review.comment}</Text>
-            <Text style={styles.reviewRating}>⭐ {review.rating} / 5</Text>
-          </View>
-        ))}
+        
       </ScrollView>
     </View>
   );

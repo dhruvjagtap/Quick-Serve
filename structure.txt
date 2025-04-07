@@ -1,0 +1,1884 @@
+.
+├── android
+│   ├── app
+│   │   ├── build
+│   │   │   ├── generated
+│   │   │   │   ├── ap_generated_sources
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── out
+│   │   │   │   ├── autolinking
+│   │   │   │   │   └── src
+│   │   │   │   │       └── main
+│   │   │   │   │           ├── java
+│   │   │   │   │           │   └── com
+│   │   │   │   │           │       └── facebook
+│   │   │   │   │           │           └── react
+│   │   │   │   │           │               └── PackageList.java
+│   │   │   │   │           └── jni
+│   │   │   │   │               ├── Android-autolinking.cmake
+│   │   │   │   │               ├── autolinking.cpp
+│   │   │   │   │               └── autolinking.h
+│   │   │   │   ├── res
+│   │   │   │   │   ├── pngs
+│   │   │   │   │   │   └── debug
+│   │   │   │   │   ├── processDebugGoogleServices
+│   │   │   │   │   │   └── values
+│   │   │   │   │   │       └── values.xml
+│   │   │   │   │   └── resValues
+│   │   │   │   │       └── debug
+│   │   │   │   │           └── values
+│   │   │   │   │               └── gradleResValues.xml
+│   │   │   │   └── source
+│   │   │   │       └── buildConfig
+│   │   │   │           └── debug
+│   │   │   │               └── com
+│   │   │   │                   └── quickserve
+│   │   │   │                       └── BuildConfig.java
+│   │   │   ├── gmpAppId
+│   │   │   │   └── debug.txt
+│   │   │   ├── intermediates
+│   │   │   │   ├── aar_metadata_check
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── checkDebugAarMetadata
+│   │   │   │   ├── annotation_processor_list
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── javaPreCompileDebug
+│   │   │   │   │           └── annotationProcessors.json
+│   │   │   │   ├── apk_ide_redirect_file
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── createDebugApkListingFileRedirect
+│   │   │   │   │           └── redirect.txt
+│   │   │   │   ├── app_metadata
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── writeDebugAppMetadata
+│   │   │   │   │           └── app-metadata.properties
+│   │   │   │   ├── assets
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugAssets
+│   │   │   │   ├── compatible_screen_manifest
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── createDebugCompatibleScreenManifests
+│   │   │   │   │           └── output-metadata.json
+│   │   │   │   ├── compile_and_runtime_not_namespaced_r_class_jar
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugResources
+│   │   │   │   │           └── R.jar
+│   │   │   │   ├── compressed_assets
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── compressDebugAssets
+│   │   │   │   │           └── out
+│   │   │   │   ├── cxx
+│   │   │   │   │   ├── Debug
+│   │   │   │   │   │   └── 585q5b4x
+│   │   │   │   │   │       ├── logs
+│   │   │   │   │   │       │   ├── arm64-v8a
+│   │   │   │   │   │       │   │   ├── build_command_appmodules
+│   │   │   │   │   │       │   │   ├── build_command_targets
+│   │   │   │   │   │       │   │   ├── build_model.json
+│   │   │   │   │   │       │   │   ├── build_stderr_appmodules.txt
+│   │   │   │   │   │       │   │   ├── build_stderr_targets.txt
+│   │   │   │   │   │       │   │   ├── build_stdout_appmodules.txt
+│   │   │   │   │   │       │   │   ├── build_stdout_targets.txt
+│   │   │   │   │   │       │   │   ├── configure_command
+│   │   │   │   │   │       │   │   ├── configure_stderr.txt
+│   │   │   │   │   │       │   │   ├── configure_stdout.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1019_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1034_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1038_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1040_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1150_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_123_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_124_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_126_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1272_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1276_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_129_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_131_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_133_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_134_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1358_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_135_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_136_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_137_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_138_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_141_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1490_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1495_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1567_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_169_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1720_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1727_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1775_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1958_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1987_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2070_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2180_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2185_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2398_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2424_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2605_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2919_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_326_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_349_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_350_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_351_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_355_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_357_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_359_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_362_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_365_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_376_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_521_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_535_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_575_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_577_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_578_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_583_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_591_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_594_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_602_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_641_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_737_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_793_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_797_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_802_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_806_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_816_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_820_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_826_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_867_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_943_timing.txt
+│   │   │   │   │   │       │   │   ├── metadata_generation_record.json
+│   │   │   │   │   │       │   │   ├── prefab_command
+│   │   │   │   │   │       │   │   ├── prefab_stderr.txt
+│   │   │   │   │   │       │   │   └── prefab_stdout.txt
+│   │   │   │   │   │       │   ├── armeabi-v7a
+│   │   │   │   │   │       │   │   ├── build_command_appmodules
+│   │   │   │   │   │       │   │   ├── build_command_targets
+│   │   │   │   │   │       │   │   ├── build_model.json
+│   │   │   │   │   │       │   │   ├── build_stderr_appmodules.txt
+│   │   │   │   │   │       │   │   ├── build_stderr_targets.txt
+│   │   │   │   │   │       │   │   ├── build_stdout_appmodules.txt
+│   │   │   │   │   │       │   │   ├── build_stdout_targets.txt
+│   │   │   │   │   │       │   │   ├── clean_command
+│   │   │   │   │   │       │   │   ├── clean_stacktrace.txt
+│   │   │   │   │   │       │   │   ├── clean_stderr.txt
+│   │   │   │   │   │       │   │   ├── clean_stdout.txt
+│   │   │   │   │   │       │   │   ├── configure_command
+│   │   │   │   │   │       │   │   ├── configure_stderr.txt
+│   │   │   │   │   │       │   │   ├── configure_stdout.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1015_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1034_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1037_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1039_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1147_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_122_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1269_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_126_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1276_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_127_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_128_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_129_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_131_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_132_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_134_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_135_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1363_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_136_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_137_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_141_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1490_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1497_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1575_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_168_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1727_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1729_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1775_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1944_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1987_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2066_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2180_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2185_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2398_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2416_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2927_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_326_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_353_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_354_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_355_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_357_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_359_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_362_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_365_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_371_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_521_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_535_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_572_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_577_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_586_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_587_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_593_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_594_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_602_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_634_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_737_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_798_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_806_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_808_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_809_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_813_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_820_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_826_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_869_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_943_timing.txt
+│   │   │   │   │   │       │   │   ├── metadata_generation_record.json
+│   │   │   │   │   │       │   │   ├── prefab_command
+│   │   │   │   │   │       │   │   ├── prefab_stderr.txt
+│   │   │   │   │   │       │   │   └── prefab_stdout.txt
+│   │   │   │   │   │       │   ├── x86
+│   │   │   │   │   │       │   │   ├── build_command_appmodules
+│   │   │   │   │   │       │   │   ├── build_command_targets
+│   │   │   │   │   │       │   │   ├── build_model.json
+│   │   │   │   │   │       │   │   ├── build_stderr_appmodules.txt
+│   │   │   │   │   │       │   │   ├── build_stderr_targets.txt
+│   │   │   │   │   │       │   │   ├── build_stdout_appmodules.txt
+│   │   │   │   │   │       │   │   ├── build_stdout_targets.txt
+│   │   │   │   │   │       │   │   ├── configure_command
+│   │   │   │   │   │       │   │   ├── configure_stderr.txt
+│   │   │   │   │   │       │   │   ├── configure_stdout.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1015_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1034_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1037_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1046_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1160_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_122_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_126_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1272_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1276_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_127_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_128_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_131_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_132_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_135_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1363_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_136_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_137_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_141_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1490_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1499_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1579_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_168_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1727_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1729_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1775_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1944_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1995_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2056_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2180_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2185_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2398_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2421_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2927_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_326_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_354_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_355_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_359_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_361_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_362_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_365_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_368_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_371_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_521_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_535_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_572_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_577_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_579_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_586_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_593_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_594_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_602_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_634_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_747_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_798_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_806_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_808_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_809_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_813_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_820_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_826_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_869_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_943_timing.txt
+│   │   │   │   │   │       │   │   ├── metadata_generation_record.json
+│   │   │   │   │   │       │   │   ├── prefab_command
+│   │   │   │   │   │       │   │   ├── prefab_stderr.txt
+│   │   │   │   │   │       │   │   └── prefab_stdout.txt
+│   │   │   │   │   │       │   └── x86_64
+│   │   │   │   │   │       │       ├── build_command_appmodules
+│   │   │   │   │   │       │       ├── build_command_targets
+│   │   │   │   │   │       │       ├── build_model.json
+│   │   │   │   │   │       │       ├── build_stderr_appmodules.txt
+│   │   │   │   │   │       │       ├── build_stderr_targets.txt
+│   │   │   │   │   │       │       ├── build_stdout_appmodules.txt
+│   │   │   │   │   │       │       ├── build_stdout_targets.txt
+│   │   │   │   │   │       │       ├── configure_command
+│   │   │   │   │   │       │       ├── configure_stderr.txt
+│   │   │   │   │   │       │       ├── configure_stdout.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1015_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1034_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1037_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1046_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1151_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_126_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1271_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1279_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_128_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_131_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_132_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1360_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_136_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_137_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_138_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_141_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1484_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1490_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1579_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_168_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1727_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1729_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1775_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1944_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1995_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_2066_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_2180_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_2193_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_2398_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_2421_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_2927_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_326_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_353_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_355_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_358_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_359_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_362_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_365_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_368_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_371_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_521_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_535_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_577_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_578_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_580_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_585_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_586_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_594_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_602_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_634_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_744_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_798_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_806_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_808_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_809_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_813_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_820_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_826_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_867_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_943_timing.txt
+│   │   │   │   │   │       │       ├── metadata_generation_record.json
+│   │   │   │   │   │       │       ├── prefab_command
+│   │   │   │   │   │       │       ├── prefab_stderr.txt
+│   │   │   │   │   │       │       └── prefab_stdout.txt
+│   │   │   │   │   │       └── obj
+│   │   │   │   │   │           ├── arm64-v8a
+│   │   │   │   │   │           │   ├── libappmodules.so
+│   │   │   │   │   │           │   ├── libc++_shared.so
+│   │   │   │   │   │           │   ├── libfbjni.so
+│   │   │   │   │   │           │   ├── libjsi.so
+│   │   │   │   │   │           │   ├── libreact_codegen_rnscreens.so
+│   │   │   │   │   │           │   ├── libreact_codegen_rnsvg.so
+│   │   │   │   │   │           │   ├── libreact_codegen_safeareacontext.so
+│   │   │   │   │   │           │   └── libreactnative.so
+│   │   │   │   │   │           ├── armeabi-v7a
+│   │   │   │   │   │           │   ├── libappmodules.so
+│   │   │   │   │   │           │   ├── libc++_shared.so
+│   │   │   │   │   │           │   ├── libfbjni.so
+│   │   │   │   │   │           │   ├── libjsi.so
+│   │   │   │   │   │           │   ├── libreact_codegen_rnscreens.so
+│   │   │   │   │   │           │   ├── libreact_codegen_rnsvg.so
+│   │   │   │   │   │           │   ├── libreact_codegen_safeareacontext.so
+│   │   │   │   │   │           │   └── libreactnative.so
+│   │   │   │   │   │           ├── x86
+│   │   │   │   │   │           │   ├── libappmodules.so
+│   │   │   │   │   │           │   ├── libc++_shared.so
+│   │   │   │   │   │           │   ├── libfbjni.so
+│   │   │   │   │   │           │   ├── libjsi.so
+│   │   │   │   │   │           │   ├── libreact_codegen_rnscreens.so
+│   │   │   │   │   │           │   ├── libreact_codegen_rnsvg.so
+│   │   │   │   │   │           │   ├── libreact_codegen_safeareacontext.so
+│   │   │   │   │   │           │   └── libreactnative.so
+│   │   │   │   │   │           └── x86_64
+│   │   │   │   │   │               ├── libappmodules.so
+│   │   │   │   │   │               ├── libc++_shared.so
+│   │   │   │   │   │               ├── libfbjni.so
+│   │   │   │   │   │               ├── libjsi.so
+│   │   │   │   │   │               ├── libreact_codegen_rnscreens.so
+│   │   │   │   │   │               ├── libreact_codegen_rnsvg.so
+│   │   │   │   │   │               ├── libreact_codegen_safeareacontext.so
+│   │   │   │   │   │               └── libreactnative.so
+│   │   │   │   │   └── refs
+│   │   │   │   │       └── react-native-reanimated
+│   │   │   │   │           ├── 4cp6p2x5
+│   │   │   │   │           │   ├── modules
+│   │   │   │   │           │   │   ├── reanimated
+│   │   │   │   │           │   │   │   ├── include
+│   │   │   │   │           │   │   │   │   └── placeholder.txt
+│   │   │   │   │           │   │   │   ├── libs
+│   │   │   │   │           │   │   │   │   └── android.x86_64
+│   │   │   │   │           │   │   │   │       └── abi.json
+│   │   │   │   │           │   │   │   └── module.json
+│   │   │   │   │           │   │   └── worklets
+│   │   │   │   │           │   │       ├── include
+│   │   │   │   │           │   │       │   └── placeholder.txt
+│   │   │   │   │           │   │       ├── libs
+│   │   │   │   │           │   │       │   └── android.x86_64
+│   │   │   │   │           │   │       │       └── abi.json
+│   │   │   │   │           │   │       └── module.json
+│   │   │   │   │           │   ├── prefab.json
+│   │   │   │   │           │   └── prefab_publication.json
+│   │   │   │   │           ├── 5f3v4l5z
+│   │   │   │   │           │   ├── modules
+│   │   │   │   │           │   │   ├── reanimated
+│   │   │   │   │           │   │   │   ├── include
+│   │   │   │   │           │   │   │   │   └── placeholder.txt
+│   │   │   │   │           │   │   │   ├── libs
+│   │   │   │   │           │   │   │   │   └── android.x86
+│   │   │   │   │           │   │   │   │       └── abi.json
+│   │   │   │   │           │   │   │   └── module.json
+│   │   │   │   │           │   │   └── worklets
+│   │   │   │   │           │   │       ├── include
+│   │   │   │   │           │   │       │   └── placeholder.txt
+│   │   │   │   │           │   │       ├── libs
+│   │   │   │   │           │   │       │   └── android.x86
+│   │   │   │   │           │   │       │       └── abi.json
+│   │   │   │   │           │   │       └── module.json
+│   │   │   │   │           │   ├── prefab.json
+│   │   │   │   │           │   └── prefab_publication.json
+│   │   │   │   │           ├── 6c04u4l5
+│   │   │   │   │           │   ├── modules
+│   │   │   │   │           │   │   ├── reanimated
+│   │   │   │   │           │   │   │   ├── include
+│   │   │   │   │           │   │   │   │   └── placeholder.txt
+│   │   │   │   │           │   │   │   ├── libs
+│   │   │   │   │           │   │   │   │   └── android.arm64-v8a
+│   │   │   │   │           │   │   │   │       └── abi.json
+│   │   │   │   │           │   │   │   └── module.json
+│   │   │   │   │           │   │   └── worklets
+│   │   │   │   │           │   │       ├── include
+│   │   │   │   │           │   │       │   └── placeholder.txt
+│   │   │   │   │           │   │       ├── libs
+│   │   │   │   │           │   │       │   └── android.arm64-v8a
+│   │   │   │   │           │   │       │       └── abi.json
+│   │   │   │   │           │   │       └── module.json
+│   │   │   │   │           │   ├── prefab.json
+│   │   │   │   │           │   └── prefab_publication.json
+│   │   │   │   │           └── o366k1m5
+│   │   │   │   │               ├── modules
+│   │   │   │   │               │   ├── reanimated
+│   │   │   │   │               │   │   ├── include
+│   │   │   │   │               │   │   │   └── placeholder.txt
+│   │   │   │   │               │   │   ├── libs
+│   │   │   │   │               │   │   │   └── android.armeabi-v7a
+│   │   │   │   │               │   │   │       └── abi.json
+│   │   │   │   │               │   │   └── module.json
+│   │   │   │   │               │   └── worklets
+│   │   │   │   │               │       ├── include
+│   │   │   │   │               │       │   └── placeholder.txt
+│   │   │   │   │               │       ├── libs
+│   │   │   │   │               │       │   └── android.armeabi-v7a
+│   │   │   │   │               │       │       └── abi.json
+│   │   │   │   │               │       └── module.json
+│   │   │   │   │               ├── prefab.json
+│   │   │   │   │               └── prefab_publication.json
+│   │   │   │   ├── data_binding_layout_info_type_merge
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugResources
+│   │   │   │   │           └── out
+│   │   │   │   ├── data_binding_layout_info_type_package
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── packageDebugResources
+│   │   │   │   │           └── out
+│   │   │   │   ├── desugar_graph
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   │               ├── currentProject
+│   │   │   │   │               │   ├── dirs_bucket_0
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_1
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_2
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_3
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_4
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_5
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_6
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_7
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_d3b7e32faef8583d96c319a2fd256cba2ae4a85248ef2377949dbfcba20101ac_bucket_0
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_d3b7e32faef8583d96c319a2fd256cba2ae4a85248ef2377949dbfcba20101ac_bucket_1
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_d3b7e32faef8583d96c319a2fd256cba2ae4a85248ef2377949dbfcba20101ac_bucket_2
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_d3b7e32faef8583d96c319a2fd256cba2ae4a85248ef2377949dbfcba20101ac_bucket_3
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_d3b7e32faef8583d96c319a2fd256cba2ae4a85248ef2377949dbfcba20101ac_bucket_4
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_d3b7e32faef8583d96c319a2fd256cba2ae4a85248ef2377949dbfcba20101ac_bucket_5
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_d3b7e32faef8583d96c319a2fd256cba2ae4a85248ef2377949dbfcba20101ac_bucket_6
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   └── jar_d3b7e32faef8583d96c319a2fd256cba2ae4a85248ef2377949dbfcba20101ac_bucket_7
+│   │   │   │   │               │       └── graph.bin
+│   │   │   │   │               ├── externalLibs
+│   │   │   │   │               ├── mixedScopes
+│   │   │   │   │               └── otherProjects
+│   │   │   │   ├── dex
+│   │   │   │   │   └── debug
+│   │   │   │   │       ├── mergeExtDexDebug
+│   │   │   │   │       │   ├── classes2.dex
+│   │   │   │   │       │   ├── classes3.dex
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── mergeLibDexDebug
+│   │   │   │   │       │   ├── 0
+│   │   │   │   │       │   ├── 1
+│   │   │   │   │       │   │   └── classes.dex
+│   │   │   │   │       │   ├── 10
+│   │   │   │   │       │   │   └── classes.dex
+│   │   │   │   │       │   ├── 11
+│   │   │   │   │       │   │   └── classes.dex
+│   │   │   │   │       │   ├── 12
+│   │   │   │   │       │   ├── 13
+│   │   │   │   │       │   │   └── classes.dex
+│   │   │   │   │       │   ├── 14
+│   │   │   │   │       │   │   └── classes.dex
+│   │   │   │   │       │   ├── 15
+│   │   │   │   │       │   │   └── classes.dex
+│   │   │   │   │       │   ├── 2
+│   │   │   │   │       │   │   └── classes.dex
+│   │   │   │   │       │   ├── 3
+│   │   │   │   │       │   │   └── classes.dex
+│   │   │   │   │       │   ├── 4
+│   │   │   │   │       │   ├── 5
+│   │   │   │   │       │   │   └── classes.dex
+│   │   │   │   │       │   ├── 6
+│   │   │   │   │       │   │   └── classes.dex
+│   │   │   │   │       │   ├── 7
+│   │   │   │   │       │   │   └── classes.dex
+│   │   │   │   │       │   ├── 8
+│   │   │   │   │       │   └── 9
+│   │   │   │   │       │       └── classes.dex
+│   │   │   │   │       └── mergeProjectDexDebug
+│   │   │   │   │           ├── 0
+│   │   │   │   │           │   └── classes.dex
+│   │   │   │   │           ├── 1
+│   │   │   │   │           ├── 10
+│   │   │   │   │           ├── 11
+│   │   │   │   │           ├── 12
+│   │   │   │   │           ├── 13
+│   │   │   │   │           ├── 14
+│   │   │   │   │           │   └── classes.dex
+│   │   │   │   │           ├── 15
+│   │   │   │   │           │   └── classes.dex
+│   │   │   │   │           ├── 2
+│   │   │   │   │           ├── 3
+│   │   │   │   │           ├── 4
+│   │   │   │   │           ├── 5
+│   │   │   │   │           ├── 6
+│   │   │   │   │           ├── 7
+│   │   │   │   │           ├── 8
+│   │   │   │   │           └── 9
+│   │   │   │   ├── dex_archive_input_jar_hashes
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── dex_number_of_buckets_file
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── duplicate_classes_check
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── checkDebugDuplicateClasses
+│   │   │   │   ├── external_file_lib_dex_archives
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── desugarDebugFileDependencies
+│   │   │   │   ├── external_libs_dex_archive
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── external_libs_dex_archive_with_artifact_transforms
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── global_synthetics_dex
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugGlobalSynthetics
+│   │   │   │   ├── global_synthetics_external_lib
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── global_synthetics_external_libs_artifact_transform
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── global_synthetics_file_lib
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── desugarDebugFileDependencies
+│   │   │   │   ├── global_synthetics_mixed_scope
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── global_synthetics_project
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── global_synthetics_subproject
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── incremental
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   ├── mergeDebugResources
+│   │   │   │   │   │   │   ├── compile-file-map.properties
+│   │   │   │   │   │   │   ├── merged.dir
+│   │   │   │   │   │   │   │   ├── values
+│   │   │   │   │   │   │   │   │   └── values.xml
+│   │   │   │   │   │   │   │   ├── values-af
+│   │   │   │   │   │   │   │   │   └── values-af.xml
+│   │   │   │   │   │   │   │   ├── values-am
+│   │   │   │   │   │   │   │   │   └── values-am.xml
+│   │   │   │   │   │   │   │   ├── values-ar
+│   │   │   │   │   │   │   │   │   └── values-ar.xml
+│   │   │   │   │   │   │   │   ├── values-as
+│   │   │   │   │   │   │   │   │   └── values-as.xml
+│   │   │   │   │   │   │   │   ├── values-az
+│   │   │   │   │   │   │   │   │   └── values-az.xml
+│   │   │   │   │   │   │   │   ├── values-be
+│   │   │   │   │   │   │   │   │   └── values-be.xml
+│   │   │   │   │   │   │   │   ├── values-b+es+419
+│   │   │   │   │   │   │   │   │   └── values-b+es+419.xml
+│   │   │   │   │   │   │   │   ├── values-bg
+│   │   │   │   │   │   │   │   │   └── values-bg.xml
+│   │   │   │   │   │   │   │   ├── values-bn
+│   │   │   │   │   │   │   │   │   └── values-bn.xml
+│   │   │   │   │   │   │   │   ├── values-bs
+│   │   │   │   │   │   │   │   │   └── values-bs.xml
+│   │   │   │   │   │   │   │   ├── values-b+sr+Latn
+│   │   │   │   │   │   │   │   │   └── values-b+sr+Latn.xml
+│   │   │   │   │   │   │   │   ├── values-ca
+│   │   │   │   │   │   │   │   │   └── values-ca.xml
+│   │   │   │   │   │   │   │   ├── values-cs
+│   │   │   │   │   │   │   │   │   └── values-cs.xml
+│   │   │   │   │   │   │   │   ├── values-da
+│   │   │   │   │   │   │   │   │   └── values-da.xml
+│   │   │   │   │   │   │   │   ├── values-de
+│   │   │   │   │   │   │   │   │   └── values-de.xml
+│   │   │   │   │   │   │   │   ├── values-el
+│   │   │   │   │   │   │   │   │   └── values-el.xml
+│   │   │   │   │   │   │   │   ├── values-en-rAU
+│   │   │   │   │   │   │   │   │   └── values-en-rAU.xml
+│   │   │   │   │   │   │   │   ├── values-en-rCA
+│   │   │   │   │   │   │   │   │   └── values-en-rCA.xml
+│   │   │   │   │   │   │   │   ├── values-en-rGB
+│   │   │   │   │   │   │   │   │   └── values-en-rGB.xml
+│   │   │   │   │   │   │   │   ├── values-en-rIN
+│   │   │   │   │   │   │   │   │   └── values-en-rIN.xml
+│   │   │   │   │   │   │   │   ├── values-en-rXC
+│   │   │   │   │   │   │   │   │   └── values-en-rXC.xml
+│   │   │   │   │   │   │   │   ├── values-es
+│   │   │   │   │   │   │   │   │   └── values-es.xml
+│   │   │   │   │   │   │   │   ├── values-es-rES
+│   │   │   │   │   │   │   │   │   └── values-es-rES.xml
+│   │   │   │   │   │   │   │   ├── values-es-rUS
+│   │   │   │   │   │   │   │   │   └── values-es-rUS.xml
+│   │   │   │   │   │   │   │   ├── values-et
+│   │   │   │   │   │   │   │   │   └── values-et.xml
+│   │   │   │   │   │   │   │   ├── values-eu
+│   │   │   │   │   │   │   │   │   └── values-eu.xml
+│   │   │   │   │   │   │   │   ├── values-fa
+│   │   │   │   │   │   │   │   │   └── values-fa.xml
+│   │   │   │   │   │   │   │   ├── values-fi
+│   │   │   │   │   │   │   │   │   └── values-fi.xml
+│   │   │   │   │   │   │   │   ├── values-fr
+│   │   │   │   │   │   │   │   │   └── values-fr.xml
+│   │   │   │   │   │   │   │   ├── values-fr-rCA
+│   │   │   │   │   │   │   │   │   └── values-fr-rCA.xml
+│   │   │   │   │   │   │   │   ├── values-gl
+│   │   │   │   │   │   │   │   │   └── values-gl.xml
+│   │   │   │   │   │   │   │   ├── values-gu
+│   │   │   │   │   │   │   │   │   └── values-gu.xml
+│   │   │   │   │   │   │   │   ├── values-h320dp-port-v13
+│   │   │   │   │   │   │   │   │   └── values-h320dp-port-v13.xml
+│   │   │   │   │   │   │   │   ├── values-h360dp-land-v13
+│   │   │   │   │   │   │   │   │   └── values-h360dp-land-v13.xml
+│   │   │   │   │   │   │   │   ├── values-h480dp-land-v13
+│   │   │   │   │   │   │   │   │   └── values-h480dp-land-v13.xml
+│   │   │   │   │   │   │   │   ├── values-h550dp-port-v13
+│   │   │   │   │   │   │   │   │   └── values-h550dp-port-v13.xml
+│   │   │   │   │   │   │   │   ├── values-h720dp-v13
+│   │   │   │   │   │   │   │   │   └── values-h720dp-v13.xml
+│   │   │   │   │   │   │   │   ├── values-hdpi-v4
+│   │   │   │   │   │   │   │   │   └── values-hdpi-v4.xml
+│   │   │   │   │   │   │   │   ├── values-hi
+│   │   │   │   │   │   │   │   │   └── values-hi.xml
+│   │   │   │   │   │   │   │   ├── values-hr
+│   │   │   │   │   │   │   │   │   └── values-hr.xml
+│   │   │   │   │   │   │   │   ├── values-hu
+│   │   │   │   │   │   │   │   │   └── values-hu.xml
+│   │   │   │   │   │   │   │   ├── values-hy
+│   │   │   │   │   │   │   │   │   └── values-hy.xml
+│   │   │   │   │   │   │   │   ├── values-in
+│   │   │   │   │   │   │   │   │   └── values-in.xml
+│   │   │   │   │   │   │   │   ├── values-is
+│   │   │   │   │   │   │   │   │   └── values-is.xml
+│   │   │   │   │   │   │   │   ├── values-it
+│   │   │   │   │   │   │   │   │   └── values-it.xml
+│   │   │   │   │   │   │   │   ├── values-iw
+│   │   │   │   │   │   │   │   │   └── values-iw.xml
+│   │   │   │   │   │   │   │   ├── values-ja
+│   │   │   │   │   │   │   │   │   └── values-ja.xml
+│   │   │   │   │   │   │   │   ├── values-ka
+│   │   │   │   │   │   │   │   │   └── values-ka.xml
+│   │   │   │   │   │   │   │   ├── values-kk
+│   │   │   │   │   │   │   │   │   └── values-kk.xml
+│   │   │   │   │   │   │   │   ├── values-km
+│   │   │   │   │   │   │   │   │   └── values-km.xml
+│   │   │   │   │   │   │   │   ├── values-kn
+│   │   │   │   │   │   │   │   │   └── values-kn.xml
+│   │   │   │   │   │   │   │   ├── values-ko
+│   │   │   │   │   │   │   │   │   └── values-ko.xml
+│   │   │   │   │   │   │   │   ├── values-ky
+│   │   │   │   │   │   │   │   │   └── values-ky.xml
+│   │   │   │   │   │   │   │   ├── values-land
+│   │   │   │   │   │   │   │   │   └── values-land.xml
+│   │   │   │   │   │   │   │   ├── values-large-v4
+│   │   │   │   │   │   │   │   │   └── values-large-v4.xml
+│   │   │   │   │   │   │   │   ├── values-ldltr-v21
+│   │   │   │   │   │   │   │   │   └── values-ldltr-v21.xml
+│   │   │   │   │   │   │   │   ├── values-ldrtl-v17
+│   │   │   │   │   │   │   │   │   └── values-ldrtl-v17.xml
+│   │   │   │   │   │   │   │   ├── values-lo
+│   │   │   │   │   │   │   │   │   └── values-lo.xml
+│   │   │   │   │   │   │   │   ├── values-lt
+│   │   │   │   │   │   │   │   │   └── values-lt.xml
+│   │   │   │   │   │   │   │   ├── values-lv
+│   │   │   │   │   │   │   │   │   └── values-lv.xml
+│   │   │   │   │   │   │   │   ├── values-mk
+│   │   │   │   │   │   │   │   │   └── values-mk.xml
+│   │   │   │   │   │   │   │   ├── values-ml
+│   │   │   │   │   │   │   │   │   └── values-ml.xml
+│   │   │   │   │   │   │   │   ├── values-mn
+│   │   │   │   │   │   │   │   │   └── values-mn.xml
+│   │   │   │   │   │   │   │   ├── values-mr
+│   │   │   │   │   │   │   │   │   └── values-mr.xml
+│   │   │   │   │   │   │   │   ├── values-ms
+│   │   │   │   │   │   │   │   │   └── values-ms.xml
+│   │   │   │   │   │   │   │   ├── values-my
+│   │   │   │   │   │   │   │   │   └── values-my.xml
+│   │   │   │   │   │   │   │   ├── values-nb
+│   │   │   │   │   │   │   │   │   └── values-nb.xml
+│   │   │   │   │   │   │   │   ├── values-ne
+│   │   │   │   │   │   │   │   │   └── values-ne.xml
+│   │   │   │   │   │   │   │   ├── values-night-v8
+│   │   │   │   │   │   │   │   │   └── values-night-v8.xml
+│   │   │   │   │   │   │   │   ├── values-nl
+│   │   │   │   │   │   │   │   │   └── values-nl.xml
+│   │   │   │   │   │   │   │   ├── values-or
+│   │   │   │   │   │   │   │   │   └── values-or.xml
+│   │   │   │   │   │   │   │   ├── values-pa
+│   │   │   │   │   │   │   │   │   └── values-pa.xml
+│   │   │   │   │   │   │   │   ├── values-pl
+│   │   │   │   │   │   │   │   │   └── values-pl.xml
+│   │   │   │   │   │   │   │   ├── values-port
+│   │   │   │   │   │   │   │   │   └── values-port.xml
+│   │   │   │   │   │   │   │   ├── values-pt
+│   │   │   │   │   │   │   │   │   └── values-pt.xml
+│   │   │   │   │   │   │   │   ├── values-pt-rBR
+│   │   │   │   │   │   │   │   │   └── values-pt-rBR.xml
+│   │   │   │   │   │   │   │   ├── values-pt-rPT
+│   │   │   │   │   │   │   │   │   └── values-pt-rPT.xml
+│   │   │   │   │   │   │   │   ├── values-ro
+│   │   │   │   │   │   │   │   │   └── values-ro.xml
+│   │   │   │   │   │   │   │   ├── values-ru
+│   │   │   │   │   │   │   │   │   └── values-ru.xml
+│   │   │   │   │   │   │   │   ├── values-si
+│   │   │   │   │   │   │   │   │   └── values-si.xml
+│   │   │   │   │   │   │   │   ├── values-sk
+│   │   │   │   │   │   │   │   │   └── values-sk.xml
+│   │   │   │   │   │   │   │   ├── values-sl
+│   │   │   │   │   │   │   │   │   └── values-sl.xml
+│   │   │   │   │   │   │   │   ├── values-small-v4
+│   │   │   │   │   │   │   │   │   └── values-small-v4.xml
+│   │   │   │   │   │   │   │   ├── values-sq
+│   │   │   │   │   │   │   │   │   └── values-sq.xml
+│   │   │   │   │   │   │   │   ├── values-sr
+│   │   │   │   │   │   │   │   │   └── values-sr.xml
+│   │   │   │   │   │   │   │   ├── values-sv
+│   │   │   │   │   │   │   │   │   └── values-sv.xml
+│   │   │   │   │   │   │   │   ├── values-sw
+│   │   │   │   │   │   │   │   │   └── values-sw.xml
+│   │   │   │   │   │   │   │   ├── values-sw600dp-v13
+│   │   │   │   │   │   │   │   │   └── values-sw600dp-v13.xml
+│   │   │   │   │   │   │   │   ├── values-ta
+│   │   │   │   │   │   │   │   │   └── values-ta.xml
+│   │   │   │   │   │   │   │   ├── values-te
+│   │   │   │   │   │   │   │   │   └── values-te.xml
+│   │   │   │   │   │   │   │   ├── values-th
+│   │   │   │   │   │   │   │   │   └── values-th.xml
+│   │   │   │   │   │   │   │   ├── values-tl
+│   │   │   │   │   │   │   │   │   └── values-tl.xml
+│   │   │   │   │   │   │   │   ├── values-tr
+│   │   │   │   │   │   │   │   │   └── values-tr.xml
+│   │   │   │   │   │   │   │   ├── values-uk
+│   │   │   │   │   │   │   │   │   └── values-uk.xml
+│   │   │   │   │   │   │   │   ├── values-ur
+│   │   │   │   │   │   │   │   │   └── values-ur.xml
+│   │   │   │   │   │   │   │   ├── values-uz
+│   │   │   │   │   │   │   │   │   └── values-uz.xml
+│   │   │   │   │   │   │   │   ├── values-v16
+│   │   │   │   │   │   │   │   │   └── values-v16.xml
+│   │   │   │   │   │   │   │   ├── values-v17
+│   │   │   │   │   │   │   │   │   └── values-v17.xml
+│   │   │   │   │   │   │   │   ├── values-v18
+│   │   │   │   │   │   │   │   │   └── values-v18.xml
+│   │   │   │   │   │   │   │   ├── values-v21
+│   │   │   │   │   │   │   │   │   └── values-v21.xml
+│   │   │   │   │   │   │   │   ├── values-v22
+│   │   │   │   │   │   │   │   │   └── values-v22.xml
+│   │   │   │   │   │   │   │   ├── values-v23
+│   │   │   │   │   │   │   │   │   └── values-v23.xml
+│   │   │   │   │   │   │   │   ├── values-v24
+│   │   │   │   │   │   │   │   │   └── values-v24.xml
+│   │   │   │   │   │   │   │   ├── values-v25
+│   │   │   │   │   │   │   │   │   └── values-v25.xml
+│   │   │   │   │   │   │   │   ├── values-v26
+│   │   │   │   │   │   │   │   │   └── values-v26.xml
+│   │   │   │   │   │   │   │   ├── values-v28
+│   │   │   │   │   │   │   │   │   └── values-v28.xml
+│   │   │   │   │   │   │   │   ├── values-v31
+│   │   │   │   │   │   │   │   │   └── values-v31.xml
+│   │   │   │   │   │   │   │   ├── values-vi
+│   │   │   │   │   │   │   │   │   └── values-vi.xml
+│   │   │   │   │   │   │   │   ├── values-w320dp-land-v13
+│   │   │   │   │   │   │   │   │   └── values-w320dp-land-v13.xml
+│   │   │   │   │   │   │   │   ├── values-w360dp-port-v13
+│   │   │   │   │   │   │   │   │   └── values-w360dp-port-v13.xml
+│   │   │   │   │   │   │   │   ├── values-w480dp-port-v13
+│   │   │   │   │   │   │   │   │   └── values-w480dp-port-v13.xml
+│   │   │   │   │   │   │   │   ├── values-w600dp-land-v13
+│   │   │   │   │   │   │   │   │   └── values-w600dp-land-v13.xml
+│   │   │   │   │   │   │   │   ├── values-watch-v20
+│   │   │   │   │   │   │   │   │   └── values-watch-v20.xml
+│   │   │   │   │   │   │   │   ├── values-watch-v21
+│   │   │   │   │   │   │   │   │   └── values-watch-v21.xml
+│   │   │   │   │   │   │   │   ├── values-xlarge-v4
+│   │   │   │   │   │   │   │   │   └── values-xlarge-v4.xml
+│   │   │   │   │   │   │   │   ├── values-zh-rCN
+│   │   │   │   │   │   │   │   │   └── values-zh-rCN.xml
+│   │   │   │   │   │   │   │   ├── values-zh-rHK
+│   │   │   │   │   │   │   │   │   └── values-zh-rHK.xml
+│   │   │   │   │   │   │   │   ├── values-zh-rTW
+│   │   │   │   │   │   │   │   │   └── values-zh-rTW.xml
+│   │   │   │   │   │   │   │   └── values-zu
+│   │   │   │   │   │   │   │       └── values-zu.xml
+│   │   │   │   │   │   │   ├── merger.xml
+│   │   │   │   │   │   │   └── stripped.dir
+│   │   │   │   │   │   └── packageDebugResources
+│   │   │   │   │   │       ├── compile-file-map.properties
+│   │   │   │   │   │       ├── merged.dir
+│   │   │   │   │   │       │   └── values
+│   │   │   │   │   │       │       └── values.xml
+│   │   │   │   │   │       ├── merger.xml
+│   │   │   │   │   │       └── stripped.dir
+│   │   │   │   │   ├── debug-mergeJavaRes
+│   │   │   │   │   │   ├── merge-state
+│   │   │   │   │   │   └── zip-cache
+│   │   │   │   │   │       ├── 0NWELHMdBG6e+YMNdpAgF4td+4Y=
+│   │   │   │   │   │       ├── 0ODYQWTcTY_lErRC18ZcHVG9YQw=
+│   │   │   │   │   │       ├── 0yPsTCNqxqU+cotjfTMgLs4Ln+Q=
+│   │   │   │   │   │       ├── 2di7wFhFurYoy0xIo2M6Hk0VV4k=
+│   │   │   │   │   │       ├── 2Orv3_78OlCsgBeH3BFxGQ_KzPM=
+│   │   │   │   │   │       ├── 3fxGXKs0AY6Mfb3KRyOUMsZviR4=
+│   │   │   │   │   │       ├── 3+La823RLHPPYEXHRFJ5G3YAqfw=
+│   │   │   │   │   │       ├── 3N7pEXr+4F+2a+JZHVfW+uJwo14=
+│   │   │   │   │   │       ├── 4r2Z4UIi3Dc98D4+3IFPNiiUH8s=
+│   │   │   │   │   │       ├── 4y+REZrzZSGCSmXINzalKpgwZds=
+│   │   │   │   │   │       ├── 52rGdzHLc1waU5ZXQFXuV3HpV7o=
+│   │   │   │   │   │       ├── 68hiXGjV2DOuDmq3UvpA5H+qHy0=
+│   │   │   │   │   │       ├── 7+7ba1W82b4ztzIqWHes49jIrI0=
+│   │   │   │   │   │       ├── 797rMOkcd+6nQwgcs2tvzlmhNm4=
+│   │   │   │   │   │       ├── 7IMzsGqFQaK1_FJk25hu5vNsf9E=
+│   │   │   │   │   │       ├── 7wjYM4ImqynnU+N3e5WAu1yHVeQ=
+│   │   │   │   │   │       ├── 8bsT4Coxx_52MJv5FFx0JraXXMM=
+│   │   │   │   │   │       ├── 8FSVwAFVMjJDPNiqwfK_5OYC5So=
+│   │   │   │   │   │       ├── 961GT1h_wL0C_us1gGvB+G2EH7A=
+│   │   │   │   │   │       ├── 9aFhF0JB7DXLZ+7gumrAuAI56iA=
+│   │   │   │   │   │       ├── 9BAJmMcQE81TeQqQS02ajcbsDeM=
+│   │   │   │   │   │       ├── 9I4a74PPba1i2B8O7IhyVKJ8TlI=
+│   │   │   │   │   │       ├── 9ip8MPJ6__dF2CgTB8XkYkdXQFU=
+│   │   │   │   │   │       ├── a4PD0RThPXoEy6_WHF7r6GCCbio=
+│   │   │   │   │   │       ├── aIVPKLumb0edcU0+HPvEAhwXFks=
+│   │   │   │   │   │       ├── aRkdBFUsMkzKux5kH61FjUVhJsI=
+│   │   │   │   │   │       ├── bnYas4xKTxsK8qSVAnQJ3YWZXoo=
+│   │   │   │   │   │       ├── BUEz_sqSJgBJA8qUuPS6s62Sn8c=
+│   │   │   │   │   │       ├── bxq9TN_PbLbzV8aYZFHs2DbaLbA=
+│   │   │   │   │   │       ├── bZIvv454aDwPYIcpKtpl_C0tNCs=
+│   │   │   │   │   │       ├── Ce3ddmD0lMXVteTukB+bHLdYouo=
+│   │   │   │   │   │       ├── cFZ9xU98SktWcjyjx8T5ywb+1JU=
+│   │   │   │   │   │       ├── CJojW2WeghiCkFdeQZOEjWnkdAA=
+│   │   │   │   │   │       ├── dcBGJnOWBS635OYHaJEpvwLANPI=
+│   │   │   │   │   │       ├── EMygShNVrlfKx_mt4eRMRxRxUp8=
+│   │   │   │   │   │       ├── EuGerRG1HoaT8U0JYPzJzP4uEao=
+│   │   │   │   │   │       ├── ex0VTS1IM0l8rSoLrYDpDOuLbUQ=
+│   │   │   │   │   │       ├── f9f2JiL7eGBmI9hBRPclb_uzjco=
+│   │   │   │   │   │       ├── FKNa63Zs6FToQkSuj+mzKuxf2PY=
+│   │   │   │   │   │       ├── foYSZJTUy4yqRvXjIMBaXC7og9U=
+│   │   │   │   │   │       ├── g5jaK3Q8b6C_de9k1f07D5+PFO0=
+│   │   │   │   │   │       ├── G78ED234jeJAl0arHcx2mZtW_ZY=
+│   │   │   │   │   │       ├── ge1dReQmtl8SBG6MASFDwjECLVo=
+│   │   │   │   │   │       ├── GImV6VadzUt1c_kHsrnYoNZkNSY=
+│   │   │   │   │   │       ├── gqWHl_UfxMM+FNmbH+9o3HcDk_U=
+│   │   │   │   │   │       ├── Gsw0K8Ch2ERqHLBGRTuwC2MHuvU=
+│   │   │   │   │   │       ├── HU4NuwJ3W2PPSKb_5Dr0X8kh4Q4=
+│   │   │   │   │   │       ├── i4jizmtj0aRI3ouncjTVC18Kr4Y=
+│   │   │   │   │   │       ├── iBjaVwJzAEZ6SUzWR6Lnb0V+NeE=
+│   │   │   │   │   │       ├── ICTyV256YZ1N3hgNkk7vSUWUTQU=
+│   │   │   │   │   │       ├── IERRnhUYCIxbWx01MAsEYOMzaFY=
+│   │   │   │   │   │       ├── IkwM7rwm5qDDF4nU838FlhvxGDk=
+│   │   │   │   │   │       ├── IRPAmY+qfphjorn38LpOwHN3zaI=
+│   │   │   │   │   │       ├── is+nyAstTumb0yIu57Z86Fbm+9E=
+│   │   │   │   │   │       ├── ISv+ShHNJJm8ZNjKVahC9L2d+PQ=
+│   │   │   │   │   │       ├── j3vYCW4YHPMqjCEZ3vLRmZMKEPg=
+│   │   │   │   │   │       ├── jHb5L4hZEJxlvNsMl7rcWnvPh7s=
+│   │   │   │   │   │       ├── JHcjebe7e_O94YY5TXXkpaPY5Y4=
+│   │   │   │   │   │       ├── JyReTUBzek_HtF5U4BdCr4wEKJA=
+│   │   │   │   │   │       ├── kIrpLmpvS32_XaTItslTnVUjXP4=
+│   │   │   │   │   │       ├── l2b+LVbqhonqlEFngw_UMPiLctk=
+│   │   │   │   │   │       ├── Lo2M9E9JUQr+xH2cuA3GboPZbaA=
+│   │   │   │   │   │       ├── lOIGBwyniCvEgjScZjezqxB4LFI=
+│   │   │   │   │   │       ├── M1nJAsmKiAZTl6DPC0rBDz_GDl4=
+│   │   │   │   │   │       ├── m5ieR2+FFDMrAXsFE5INFf_NQfg=
+│   │   │   │   │   │       ├── MM2M8W0s6bLBoYOgo6khYvvFTfU=
+│   │   │   │   │   │       ├── mMbOtD8T0Briqr_o92uvPV2naMY=
+│   │   │   │   │   │       ├── MNCdDNySe3fBZ1rhRKgeL6xT4Vo=
+│   │   │   │   │   │       ├── mrhP50K83LOrC2FSRbRUSHbhF6o=
+│   │   │   │   │   │       ├── mXpGVCmXdYYsn0T3qCgY2fMl3zs=
+│   │   │   │   │   │       ├── n96J5v_Riq4JL2qdny8KhSztYrE=
+│   │   │   │   │   │       ├── NnV3cN+kbcvRrkqHX9wPoviLODA=
+│   │   │   │   │   │       ├── nOhLNtMFn8EXT+faFvJmJ199tyg=
+│   │   │   │   │   │       ├── nvJfSZk8GrLMJRqfJPlRI4z2Peg=
+│   │   │   │   │   │       ├── o2eKm8gyoDaF2lM_FEzD+oSSLK8=
+│   │   │   │   │   │       ├── O2WvH7OW2gLDe9UG5k9CoAB3gLk=
+│   │   │   │   │   │       ├── _oFTRwe85Y8O+TfFJxXS+b2atdg=
+│   │   │   │   │   │       ├── Onivn51y_jmTNEWXRJYbWNN_p4I=
+│   │   │   │   │   │       ├── oRrluKsGEKnZ019a+8WkdoP7L0I=
+│   │   │   │   │   │       ├── P7Swpmldthxdx+TuEenD+ya6HLU=
+│   │   │   │   │   │       ├── Pa_OIsT6gRAW+arD3I0+DSUG0S0=
+│   │   │   │   │   │       ├── Pi3jCy7aS+18lROzEJNePE9NADc=
+│   │   │   │   │   │       ├── pihrksNFekeKwD6co4ItxlbWTic=
+│   │   │   │   │   │       ├── _pX2X6fZZ0pJXNBwNW9upX5cwQA=
+│   │   │   │   │   │       ├── Q0GRXnCgqgiGZIfQr3GaOkPcY2U=
+│   │   │   │   │   │       ├── QbyBc9TkkszeKdnlXaTyPNmvtEo=
+│   │   │   │   │   │       ├── qeIbdqrYJXtmfOmsWRvKI3vqcxY=
+│   │   │   │   │   │       ├── qFekCKGomfeRCK8g6igH54GQF0c=
+│   │   │   │   │   │       ├── Qkku9jl8Tw64Wj4e+kVIGouAqHc=
+│   │   │   │   │   │       ├── qO3g+zA02HTwaK0s2qPTTQC1ED0=
+│   │   │   │   │   │       ├── QRjgUvWA_5WtjxxvR_QOhq7oXAc=
+│   │   │   │   │   │       ├── qrRQsqNE_HMAjrUQFX32Es5zXXU=
+│   │   │   │   │   │       ├── Qx+OfqrA6LtPVyKHvcColqHQ1ME=
+│   │   │   │   │   │       ├── Qy_Bz+Sl05hZ8nFNkl3B4t3cLys=
+│   │   │   │   │   │       ├── r23aiO8hOuDJDQE4v9iT4u2DnBs=
+│   │   │   │   │   │       ├── r7TeKLBQ3kZ8UOBl72CDAK6fs2Q=
+│   │   │   │   │   │       ├── raaOnj2Dg6i5S6TyioHOqDebAtI=
+│   │   │   │   │   │       ├── RdP7gdQNRn8A_McgQhA2Xr_8vXw=
+│   │   │   │   │   │       ├── ROuurJ+SYmIX1wEStoy0r+wTzQs=
+│   │   │   │   │   │       ├── RxVFBbPnA_Ng9GN5ttDrBr_YljE=
+│   │   │   │   │   │       ├── s0BDUfLRMw3Kb_B3PP3SArUMuI8=
+│   │   │   │   │   │       ├── sbmGMX_+09yfSVjx_i1pehz4M3c=
+│   │   │   │   │   │       ├── sGkq3NEehr6DQBZBBW0Eq0o_hHk=
+│   │   │   │   │   │       ├── SowDO+38BV8YyJdH4SlCAZRjdoY=
+│   │   │   │   │   │       ├── SSzzX9eQAsvJNzJzUxo3H3nfTbU=
+│   │   │   │   │   │       ├── +sxZptSQDCSEYoq3USe5H3lDHzE=
+│   │   │   │   │   │       ├── Szv8AyFAXwEPGD7xlXvm327aUVE=
+│   │   │   │   │   │       ├── T788etaNgiK_V0UCpZyvUyR71dA=
+│   │   │   │   │   │       ├── tfMfEGVxMpmVRZ+l81CFY_ZMdRo=
+│   │   │   │   │   │       ├── TLmQkbS+xO2hhzqTx9YvYSnnadY=
+│   │   │   │   │   │       ├── tSWjGGK7HYn4MxT5N+kDBv2Kj8c=
+│   │   │   │   │   │       ├── TXtKMFD3vXycCih0ZEWZrWuZuWo=
+│   │   │   │   │   │       ├── TZXQXC7i0M0wSbBP1vBnD6Cu244=
+│   │   │   │   │   │       ├── uf_jBFAiBiXzC1IEy4HyKuwx12k=
+│   │   │   │   │   │       ├── UsxvhvEvRirYM+sllsviMMyr9DI=
+│   │   │   │   │   │       ├── UWIUu7+15R3pbpITI9slQb9zjy4=
+│   │   │   │   │   │       ├── vK7Zjfb+DRlD4ZfeV3di9APvxGs=
+│   │   │   │   │   │       ├── VPDaJrFy1+FeGOkI0Rt3bwe4BAM=
+│   │   │   │   │   │       ├── +WagPG2yXThi46PDpI85pzFVHjM=
+│   │   │   │   │   │       ├── Wc7_umGzlDSCjjeWw93h3_vqqAM=
+│   │   │   │   │   │       ├── wCatIF_14FI81D_lyqgAAHBc2LY=
+│   │   │   │   │   │       ├── WNW5ifwVSnpLWQhutNXKoPg2JiM=
+│   │   │   │   │   │       ├── WzUvjSIdpKRCFxGwjNvSQm+MQAA=
+│   │   │   │   │   │       ├── X3sXrSbkydDOZHm7uE5V6fJosDk=
+│   │   │   │   │   │       ├── X4o+fky90A5zJa8vSWTf_WUwED8=
+│   │   │   │   │   │       ├── Xt_4o4vY6XWByUuKtdOlCjbB6Sc=
+│   │   │   │   │   │       ├── xtsNxW0jLI5vZx4SMZ21vCoM5Ss=
+│   │   │   │   │   │       ├── xwPbWpTCVDWTpFP6h9pXcb7RRK4=
+│   │   │   │   │   │       ├── Xxh4I3v6Jhf3Oub5CUr8iqEGf80=
+│   │   │   │   │   │       ├── yfMm+mPRL5BQusMDBNfEhQpYzuo=
+│   │   │   │   │   │       ├── +yk5m3TYkAzxSWWpoq5gYDdE4rk=
+│   │   │   │   │   │       ├── y+PpiRcGsNmGkmVN1g_v5+4LZP4=
+│   │   │   │   │   │       ├── YrP9yigDKohzpLSm_unY7rMm_Fk=
+│   │   │   │   │   │       ├── Yv+FCXDWNtXZqPkVZnHCMERqxKs=
+│   │   │   │   │   │       ├── yyOaxLuNYko2kdVLnwlGL6R1g_4=
+│   │   │   │   │   │       ├── z3pIFanVkA2YKSJzPXMaU8vWLWU=
+│   │   │   │   │   │       ├── z5Ud+Hv7klUnDxS6z5Y30TMrqoA=
+│   │   │   │   │   │       ├── zD9b+7NWozMTC8pgA522ZMaB9Ok=
+│   │   │   │   │   │       ├── ZEzXzEmJUvq2Awa6B2TGiF+ROY0=
+│   │   │   │   │   │       └── zmSs1f77uMOovCLB2hrgdXwPOzs=
+│   │   │   │   │   ├── mergeDebugAssets
+│   │   │   │   │   │   └── merger.xml
+│   │   │   │   │   ├── mergeDebugJniLibFolders
+│   │   │   │   │   │   └── merger.xml
+│   │   │   │   │   ├── mergeDebugShaders
+│   │   │   │   │   │   └── merger.xml
+│   │   │   │   │   └── packageDebug
+│   │   │   │   │       └── tmp
+│   │   │   │   │           └── debug
+│   │   │   │   │               ├── dex-renamer-state.txt
+│   │   │   │   │               └── zip-cache
+│   │   │   │   │                   ├── androidResources
+│   │   │   │   │                   └── javaResources0
+│   │   │   │   ├── javac
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── compileDebugJavaWithJavac
+│   │   │   │   │           └── classes
+│   │   │   │   │               └── com
+│   │   │   │   │                   ├── facebook
+│   │   │   │   │                   │   └── react
+│   │   │   │   │                   │       └── PackageList.class
+│   │   │   │   │                   └── quickserve
+│   │   │   │   │                       └── BuildConfig.class
+│   │   │   │   ├── java_res
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugJavaRes
+│   │   │   │   │           └── out
+│   │   │   │   │               ├── com
+│   │   │   │   │               │   └── quickserve
+│   │   │   │   │               └── META-INF
+│   │   │   │   │                   └── app_debug.kotlin_module
+│   │   │   │   ├── linked_resources_binary_format
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugResources
+│   │   │   │   │           ├── linked-resources-binary-format-debug.ap_
+│   │   │   │   │           └── output-metadata.json
+│   │   │   │   ├── local_only_symbol_list
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── parseDebugLocalResources
+│   │   │   │   │           └── R-def.txt
+│   │   │   │   ├── manifest_merge_blame_file
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugMainManifest
+│   │   │   │   │           └── manifest-merger-blame-debug-report.txt
+│   │   │   │   ├── merged_java_res
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugJavaResource
+│   │   │   │   │           └── base.jar
+│   │   │   │   ├── merged_jni_libs
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugJniLibFolders
+│   │   │   │   │           └── out
+│   │   │   │   ├── merged_manifest
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugMainManifest
+│   │   │   │   │           └── AndroidManifest.xml
+│   │   │   │   ├── merged_manifests
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugManifest
+│   │   │   │   │           ├── AndroidManifest.xml
+│   │   │   │   │           └── output-metadata.json
+│   │   │   │   ├── merged_native_libs
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugNativeLibs
+│   │   │   │   │           └── out
+│   │   │   │   │               └── lib
+│   │   │   │   │                   ├── arm64-v8a
+│   │   │   │   │                   │   ├── libappmodules.so
+│   │   │   │   │                   │   ├── libc++_shared.so
+│   │   │   │   │                   │   ├── libfbjni.so
+│   │   │   │   │                   │   ├── libgesturehandler.so
+│   │   │   │   │                   │   ├── libhermes.so
+│   │   │   │   │                   │   ├── libhermestooling.so
+│   │   │   │   │                   │   ├── libimagepipeline.so
+│   │   │   │   │                   │   ├── libjsi.so
+│   │   │   │   │                   │   ├── libnative-filters.so
+│   │   │   │   │                   │   ├── libnative-imagetranscoder.so
+│   │   │   │   │                   │   ├── libreact_codegen_rnscreens.so
+│   │   │   │   │                   │   ├── libreact_codegen_rnsvg.so
+│   │   │   │   │                   │   ├── libreact_codegen_safeareacontext.so
+│   │   │   │   │                   │   ├── libreactnative.so
+│   │   │   │   │                   │   ├── libreanimated.so
+│   │   │   │   │                   │   ├── librnscreens.so
+│   │   │   │   │                   │   └── libworklets.so
+│   │   │   │   │                   ├── armeabi-v7a
+│   │   │   │   │                   │   ├── libappmodules.so
+│   │   │   │   │                   │   ├── libc++_shared.so
+│   │   │   │   │                   │   ├── libfbjni.so
+│   │   │   │   │                   │   ├── libgesturehandler.so
+│   │   │   │   │                   │   ├── libhermes.so
+│   │   │   │   │                   │   ├── libhermestooling.so
+│   │   │   │   │                   │   ├── libimagepipeline.so
+│   │   │   │   │                   │   ├── libjsi.so
+│   │   │   │   │                   │   ├── libnative-filters.so
+│   │   │   │   │                   │   ├── libnative-imagetranscoder.so
+│   │   │   │   │                   │   ├── libreact_codegen_rnscreens.so
+│   │   │   │   │                   │   ├── libreact_codegen_rnsvg.so
+│   │   │   │   │                   │   ├── libreact_codegen_safeareacontext.so
+│   │   │   │   │                   │   ├── libreactnative.so
+│   │   │   │   │                   │   ├── libreanimated.so
+│   │   │   │   │                   │   ├── librnscreens.so
+│   │   │   │   │                   │   └── libworklets.so
+│   │   │   │   │                   ├── x86
+│   │   │   │   │                   │   ├── libappmodules.so
+│   │   │   │   │                   │   ├── libc++_shared.so
+│   │   │   │   │                   │   ├── libfbjni.so
+│   │   │   │   │                   │   ├── libgesturehandler.so
+│   │   │   │   │                   │   ├── libhermes.so
+│   │   │   │   │                   │   ├── libhermestooling.so
+│   │   │   │   │                   │   ├── libimagepipeline.so
+│   │   │   │   │                   │   ├── libjsi.so
+│   │   │   │   │                   │   ├── libnative-filters.so
+│   │   │   │   │                   │   ├── libnative-imagetranscoder.so
+│   │   │   │   │                   │   ├── libreact_codegen_rnscreens.so
+│   │   │   │   │                   │   ├── libreact_codegen_rnsvg.so
+│   │   │   │   │                   │   ├── libreact_codegen_safeareacontext.so
+│   │   │   │   │                   │   ├── libreactnative.so
+│   │   │   │   │                   │   ├── libreanimated.so
+│   │   │   │   │                   │   ├── librnscreens.so
+│   │   │   │   │                   │   └── libworklets.so
+│   │   │   │   │                   └── x86_64
+│   │   │   │   │                       ├── libappmodules.so
+│   │   │   │   │                       ├── libc++_shared.so
+│   │   │   │   │                       ├── libfbjni.so
+│   │   │   │   │                       ├── libgesturehandler.so
+│   │   │   │   │                       ├── libhermes.so
+│   │   │   │   │                       ├── libhermestooling.so
+│   │   │   │   │                       ├── libimagepipeline.so
+│   │   │   │   │                       ├── libjsi.so
+│   │   │   │   │                       ├── libnative-filters.so
+│   │   │   │   │                       ├── libnative-imagetranscoder.so
+│   │   │   │   │                       ├── libreact_codegen_rnscreens.so
+│   │   │   │   │                       ├── libreact_codegen_rnsvg.so
+│   │   │   │   │                       ├── libreact_codegen_safeareacontext.so
+│   │   │   │   │                       ├── libreactnative.so
+│   │   │   │   │                       ├── libreanimated.so
+│   │   │   │   │                       ├── librnscreens.so
+│   │   │   │   │                       └── libworklets.so
+│   │   │   │   ├── merged_res
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugResources
+│   │   │   │   │           ├── drawable_rn_edit_text_material.xml.flat
+│   │   │   │   │           ├── mipmap-hdpi_ic_launcher.png.flat
+│   │   │   │   │           ├── mipmap-hdpi_ic_launcher_round.png.flat
+│   │   │   │   │           ├── mipmap-mdpi_ic_launcher.png.flat
+│   │   │   │   │           ├── mipmap-mdpi_ic_launcher_round.png.flat
+│   │   │   │   │           ├── mipmap-xhdpi_ic_launcher.png.flat
+│   │   │   │   │           ├── mipmap-xhdpi_ic_launcher_round.png.flat
+│   │   │   │   │           ├── mipmap-xxhdpi_ic_launcher.png.flat
+│   │   │   │   │           ├── mipmap-xxhdpi_ic_launcher_round.png.flat
+│   │   │   │   │           ├── mipmap-xxxhdpi_ic_launcher.png.flat
+│   │   │   │   │           ├── mipmap-xxxhdpi_ic_launcher_round.png.flat
+│   │   │   │   │           ├── values-af_values-af.arsc.flat
+│   │   │   │   │           ├── values-am_values-am.arsc.flat
+│   │   │   │   │           ├── values-ar_values-ar.arsc.flat
+│   │   │   │   │           ├── values-as_values-as.arsc.flat
+│   │   │   │   │           ├── values-az_values-az.arsc.flat
+│   │   │   │   │           ├── values-b+es+419_values-b+es+419.arsc.flat
+│   │   │   │   │           ├── values-be_values-be.arsc.flat
+│   │   │   │   │           ├── values-bg_values-bg.arsc.flat
+│   │   │   │   │           ├── values-bn_values-bn.arsc.flat
+│   │   │   │   │           ├── values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+│   │   │   │   │           ├── values-bs_values-bs.arsc.flat
+│   │   │   │   │           ├── values-ca_values-ca.arsc.flat
+│   │   │   │   │           ├── values-cs_values-cs.arsc.flat
+│   │   │   │   │           ├── values-da_values-da.arsc.flat
+│   │   │   │   │           ├── values-de_values-de.arsc.flat
+│   │   │   │   │           ├── values-el_values-el.arsc.flat
+│   │   │   │   │           ├── values-en-rAU_values-en-rAU.arsc.flat
+│   │   │   │   │           ├── values-en-rCA_values-en-rCA.arsc.flat
+│   │   │   │   │           ├── values-en-rGB_values-en-rGB.arsc.flat
+│   │   │   │   │           ├── values-en-rIN_values-en-rIN.arsc.flat
+│   │   │   │   │           ├── values-en-rXC_values-en-rXC.arsc.flat
+│   │   │   │   │           ├── values-es-rES_values-es-rES.arsc.flat
+│   │   │   │   │           ├── values-es-rUS_values-es-rUS.arsc.flat
+│   │   │   │   │           ├── values-es_values-es.arsc.flat
+│   │   │   │   │           ├── values-et_values-et.arsc.flat
+│   │   │   │   │           ├── values-eu_values-eu.arsc.flat
+│   │   │   │   │           ├── values-fa_values-fa.arsc.flat
+│   │   │   │   │           ├── values-fi_values-fi.arsc.flat
+│   │   │   │   │           ├── values-fr-rCA_values-fr-rCA.arsc.flat
+│   │   │   │   │           ├── values-fr_values-fr.arsc.flat
+│   │   │   │   │           ├── values-gl_values-gl.arsc.flat
+│   │   │   │   │           ├── values-gu_values-gu.arsc.flat
+│   │   │   │   │           ├── values-h320dp-port-v13_values-h320dp-port-v13.arsc.flat
+│   │   │   │   │           ├── values-h360dp-land-v13_values-h360dp-land-v13.arsc.flat
+│   │   │   │   │           ├── values-h480dp-land-v13_values-h480dp-land-v13.arsc.flat
+│   │   │   │   │           ├── values-h550dp-port-v13_values-h550dp-port-v13.arsc.flat
+│   │   │   │   │           ├── values-h720dp-v13_values-h720dp-v13.arsc.flat
+│   │   │   │   │           ├── values-hdpi-v4_values-hdpi-v4.arsc.flat
+│   │   │   │   │           ├── values-hi_values-hi.arsc.flat
+│   │   │   │   │           ├── values-hr_values-hr.arsc.flat
+│   │   │   │   │           ├── values-hu_values-hu.arsc.flat
+│   │   │   │   │           ├── values-hy_values-hy.arsc.flat
+│   │   │   │   │           ├── values-in_values-in.arsc.flat
+│   │   │   │   │           ├── values-is_values-is.arsc.flat
+│   │   │   │   │           ├── values-it_values-it.arsc.flat
+│   │   │   │   │           ├── values-iw_values-iw.arsc.flat
+│   │   │   │   │           ├── values-ja_values-ja.arsc.flat
+│   │   │   │   │           ├── values-ka_values-ka.arsc.flat
+│   │   │   │   │           ├── values-kk_values-kk.arsc.flat
+│   │   │   │   │           ├── values-km_values-km.arsc.flat
+│   │   │   │   │           ├── values-kn_values-kn.arsc.flat
+│   │   │   │   │           ├── values-ko_values-ko.arsc.flat
+│   │   │   │   │           ├── values-ky_values-ky.arsc.flat
+│   │   │   │   │           ├── values-land_values-land.arsc.flat
+│   │   │   │   │           ├── values-large-v4_values-large-v4.arsc.flat
+│   │   │   │   │           ├── values-ldltr-v21_values-ldltr-v21.arsc.flat
+│   │   │   │   │           ├── values-ldrtl-v17_values-ldrtl-v17.arsc.flat
+│   │   │   │   │           ├── values-lo_values-lo.arsc.flat
+│   │   │   │   │           ├── values-lt_values-lt.arsc.flat
+│   │   │   │   │           ├── values-lv_values-lv.arsc.flat
+│   │   │   │   │           ├── values-mk_values-mk.arsc.flat
+│   │   │   │   │           ├── values-ml_values-ml.arsc.flat
+│   │   │   │   │           ├── values-mn_values-mn.arsc.flat
+│   │   │   │   │           ├── values-mr_values-mr.arsc.flat
+│   │   │   │   │           ├── values-ms_values-ms.arsc.flat
+│   │   │   │   │           ├── values-my_values-my.arsc.flat
+│   │   │   │   │           ├── values-nb_values-nb.arsc.flat
+│   │   │   │   │           ├── values-ne_values-ne.arsc.flat
+│   │   │   │   │           ├── values-night-v8_values-night-v8.arsc.flat
+│   │   │   │   │           ├── values-nl_values-nl.arsc.flat
+│   │   │   │   │           ├── values-or_values-or.arsc.flat
+│   │   │   │   │           ├── values-pa_values-pa.arsc.flat
+│   │   │   │   │           ├── values-pl_values-pl.arsc.flat
+│   │   │   │   │           ├── values-port_values-port.arsc.flat
+│   │   │   │   │           ├── values-pt-rBR_values-pt-rBR.arsc.flat
+│   │   │   │   │           ├── values-pt-rPT_values-pt-rPT.arsc.flat
+│   │   │   │   │           ├── values-pt_values-pt.arsc.flat
+│   │   │   │   │           ├── values-ro_values-ro.arsc.flat
+│   │   │   │   │           ├── values-ru_values-ru.arsc.flat
+│   │   │   │   │           ├── values-si_values-si.arsc.flat
+│   │   │   │   │           ├── values-sk_values-sk.arsc.flat
+│   │   │   │   │           ├── values-sl_values-sl.arsc.flat
+│   │   │   │   │           ├── values-small-v4_values-small-v4.arsc.flat
+│   │   │   │   │           ├── values-sq_values-sq.arsc.flat
+│   │   │   │   │           ├── values-sr_values-sr.arsc.flat
+│   │   │   │   │           ├── values-sv_values-sv.arsc.flat
+│   │   │   │   │           ├── values-sw600dp-v13_values-sw600dp-v13.arsc.flat
+│   │   │   │   │           ├── values-sw_values-sw.arsc.flat
+│   │   │   │   │           ├── values-ta_values-ta.arsc.flat
+│   │   │   │   │           ├── values-te_values-te.arsc.flat
+│   │   │   │   │           ├── values-th_values-th.arsc.flat
+│   │   │   │   │           ├── values-tl_values-tl.arsc.flat
+│   │   │   │   │           ├── values-tr_values-tr.arsc.flat
+│   │   │   │   │           ├── values-uk_values-uk.arsc.flat
+│   │   │   │   │           ├── values-ur_values-ur.arsc.flat
+│   │   │   │   │           ├── values-uz_values-uz.arsc.flat
+│   │   │   │   │           ├── values-v16_values-v16.arsc.flat
+│   │   │   │   │           ├── values-v17_values-v17.arsc.flat
+│   │   │   │   │           ├── values-v18_values-v18.arsc.flat
+│   │   │   │   │           ├── values-v21_values-v21.arsc.flat
+│   │   │   │   │           ├── values-v22_values-v22.arsc.flat
+│   │   │   │   │           ├── values-v23_values-v23.arsc.flat
+│   │   │   │   │           ├── values-v24_values-v24.arsc.flat
+│   │   │   │   │           ├── values-v25_values-v25.arsc.flat
+│   │   │   │   │           ├── values-v26_values-v26.arsc.flat
+│   │   │   │   │           ├── values-v28_values-v28.arsc.flat
+│   │   │   │   │           ├── values-v31_values-v31.arsc.flat
+│   │   │   │   │           ├── values_values.arsc.flat
+│   │   │   │   │           ├── values-vi_values-vi.arsc.flat
+│   │   │   │   │           ├── values-w320dp-land-v13_values-w320dp-land-v13.arsc.flat
+│   │   │   │   │           ├── values-w360dp-port-v13_values-w360dp-port-v13.arsc.flat
+│   │   │   │   │           ├── values-w480dp-port-v13_values-w480dp-port-v13.arsc.flat
+│   │   │   │   │           ├── values-w600dp-land-v13_values-w600dp-land-v13.arsc.flat
+│   │   │   │   │           ├── values-watch-v20_values-watch-v20.arsc.flat
+│   │   │   │   │           ├── values-watch-v21_values-watch-v21.arsc.flat
+│   │   │   │   │           ├── values-xlarge-v4_values-xlarge-v4.arsc.flat
+│   │   │   │   │           ├── values-zh-rCN_values-zh-rCN.arsc.flat
+│   │   │   │   │           ├── values-zh-rHK_values-zh-rHK.arsc.flat
+│   │   │   │   │           ├── values-zh-rTW_values-zh-rTW.arsc.flat
+│   │   │   │   │           └── values-zu_values-zu.arsc.flat
+│   │   │   │   ├── merged_res_blame_folder
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugResources
+│   │   │   │   │           └── out
+│   │   │   │   │               ├── multi-v2
+│   │   │   │   │               │   ├── mergeDebugResources.json
+│   │   │   │   │               │   ├── values-af.json
+│   │   │   │   │               │   ├── values-am.json
+│   │   │   │   │               │   ├── values-ar.json
+│   │   │   │   │               │   ├── values-as.json
+│   │   │   │   │               │   ├── values-az.json
+│   │   │   │   │               │   ├── values-be.json
+│   │   │   │   │               │   ├── values-b+es+419.json
+│   │   │   │   │               │   ├── values-bg.json
+│   │   │   │   │               │   ├── values-bn.json
+│   │   │   │   │               │   ├── values-bs.json
+│   │   │   │   │               │   ├── values-b+sr+Latn.json
+│   │   │   │   │               │   ├── values-ca.json
+│   │   │   │   │               │   ├── values-cs.json
+│   │   │   │   │               │   ├── values-da.json
+│   │   │   │   │               │   ├── values-de.json
+│   │   │   │   │               │   ├── values-el.json
+│   │   │   │   │               │   ├── values-en-rAU.json
+│   │   │   │   │               │   ├── values-en-rCA.json
+│   │   │   │   │               │   ├── values-en-rGB.json
+│   │   │   │   │               │   ├── values-en-rIN.json
+│   │   │   │   │               │   ├── values-en-rXC.json
+│   │   │   │   │               │   ├── values-es.json
+│   │   │   │   │               │   ├── values-es-rES.json
+│   │   │   │   │               │   ├── values-es-rUS.json
+│   │   │   │   │               │   ├── values-et.json
+│   │   │   │   │               │   ├── values-eu.json
+│   │   │   │   │               │   ├── values-fa.json
+│   │   │   │   │               │   ├── values-fi.json
+│   │   │   │   │               │   ├── values-fr.json
+│   │   │   │   │               │   ├── values-fr-rCA.json
+│   │   │   │   │               │   ├── values-gl.json
+│   │   │   │   │               │   ├── values-gu.json
+│   │   │   │   │               │   ├── values-h320dp-port-v13.json
+│   │   │   │   │               │   ├── values-h360dp-land-v13.json
+│   │   │   │   │               │   ├── values-h480dp-land-v13.json
+│   │   │   │   │               │   ├── values-h550dp-port-v13.json
+│   │   │   │   │               │   ├── values-h720dp-v13.json
+│   │   │   │   │               │   ├── values-hdpi-v4.json
+│   │   │   │   │               │   ├── values-hi.json
+│   │   │   │   │               │   ├── values-hr.json
+│   │   │   │   │               │   ├── values-hu.json
+│   │   │   │   │               │   ├── values-hy.json
+│   │   │   │   │               │   ├── values-in.json
+│   │   │   │   │               │   ├── values-is.json
+│   │   │   │   │               │   ├── values-it.json
+│   │   │   │   │               │   ├── values-iw.json
+│   │   │   │   │               │   ├── values-ja.json
+│   │   │   │   │               │   ├── values.json
+│   │   │   │   │               │   ├── values-ka.json
+│   │   │   │   │               │   ├── values-kk.json
+│   │   │   │   │               │   ├── values-km.json
+│   │   │   │   │               │   ├── values-kn.json
+│   │   │   │   │               │   ├── values-ko.json
+│   │   │   │   │               │   ├── values-ky.json
+│   │   │   │   │               │   ├── values-land.json
+│   │   │   │   │               │   ├── values-large-v4.json
+│   │   │   │   │               │   ├── values-ldltr-v21.json
+│   │   │   │   │               │   ├── values-ldrtl-v17.json
+│   │   │   │   │               │   ├── values-lo.json
+│   │   │   │   │               │   ├── values-lt.json
+│   │   │   │   │               │   ├── values-lv.json
+│   │   │   │   │               │   ├── values-mk.json
+│   │   │   │   │               │   ├── values-ml.json
+│   │   │   │   │               │   ├── values-mn.json
+│   │   │   │   │               │   ├── values-mr.json
+│   │   │   │   │               │   ├── values-ms.json
+│   │   │   │   │               │   ├── values-my.json
+│   │   │   │   │               │   ├── values-nb.json
+│   │   │   │   │               │   ├── values-ne.json
+│   │   │   │   │               │   ├── values-night-v8.json
+│   │   │   │   │               │   ├── values-nl.json
+│   │   │   │   │               │   ├── values-or.json
+│   │   │   │   │               │   ├── values-pa.json
+│   │   │   │   │               │   ├── values-pl.json
+│   │   │   │   │               │   ├── values-port.json
+│   │   │   │   │               │   ├── values-pt.json
+│   │   │   │   │               │   ├── values-pt-rBR.json
+│   │   │   │   │               │   ├── values-pt-rPT.json
+│   │   │   │   │               │   ├── values-ro.json
+│   │   │   │   │               │   ├── values-ru.json
+│   │   │   │   │               │   ├── values-si.json
+│   │   │   │   │               │   ├── values-sk.json
+│   │   │   │   │               │   ├── values-sl.json
+│   │   │   │   │               │   ├── values-small-v4.json
+│   │   │   │   │               │   ├── values-sq.json
+│   │   │   │   │               │   ├── values-sr.json
+│   │   │   │   │               │   ├── values-sv.json
+│   │   │   │   │               │   ├── values-sw600dp-v13.json
+│   │   │   │   │               │   ├── values-sw.json
+│   │   │   │   │               │   ├── values-ta.json
+│   │   │   │   │               │   ├── values-te.json
+│   │   │   │   │               │   ├── values-th.json
+│   │   │   │   │               │   ├── values-tl.json
+│   │   │   │   │               │   ├── values-tr.json
+│   │   │   │   │               │   ├── values-uk.json
+│   │   │   │   │               │   ├── values-ur.json
+│   │   │   │   │               │   ├── values-uz.json
+│   │   │   │   │               │   ├── values-v16.json
+│   │   │   │   │               │   ├── values-v17.json
+│   │   │   │   │               │   ├── values-v18.json
+│   │   │   │   │               │   ├── values-v21.json
+│   │   │   │   │               │   ├── values-v22.json
+│   │   │   │   │               │   ├── values-v23.json
+│   │   │   │   │               │   ├── values-v24.json
+│   │   │   │   │               │   ├── values-v25.json
+│   │   │   │   │               │   ├── values-v26.json
+│   │   │   │   │               │   ├── values-v28.json
+│   │   │   │   │               │   ├── values-v31.json
+│   │   │   │   │               │   ├── values-vi.json
+│   │   │   │   │               │   ├── values-w320dp-land-v13.json
+│   │   │   │   │               │   ├── values-w360dp-port-v13.json
+│   │   │   │   │               │   ├── values-w480dp-port-v13.json
+│   │   │   │   │               │   ├── values-w600dp-land-v13.json
+│   │   │   │   │               │   ├── values-watch-v20.json
+│   │   │   │   │               │   ├── values-watch-v21.json
+│   │   │   │   │               │   ├── values-xlarge-v4.json
+│   │   │   │   │               │   ├── values-zh-rCN.json
+│   │   │   │   │               │   ├── values-zh-rHK.json
+│   │   │   │   │               │   ├── values-zh-rTW.json
+│   │   │   │   │               │   └── values-zu.json
+│   │   │   │   │               └── single
+│   │   │   │   │                   └── mergeDebugResources.json
+│   │   │   │   ├── merged_shaders
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugShaders
+│   │   │   │   │           └── out
+│   │   │   │   ├── merged_test_only_native_libs
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugNativeLibs
+│   │   │   │   │           └── out
+│   │   │   │   ├── mixed_scope_dex_archive
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── navigation_json
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── extractDeepLinksDebug
+│   │   │   │   │           └── navigation.json
+│   │   │   │   ├── nested_resources_validation_report
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── generateDebugResources
+│   │   │   │   │           └── nestedResourcesValidationReport.txt
+│   │   │   │   ├── packaged_manifests
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugManifestForPackage
+│   │   │   │   │           ├── AndroidManifest.xml
+│   │   │   │   │           └── output-metadata.json
+│   │   │   │   ├── packaged_res
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── packageDebugResources
+│   │   │   │   │           ├── drawable
+│   │   │   │   │           │   └── rn_edit_text_material.xml
+│   │   │   │   │           ├── mipmap-hdpi-v4
+│   │   │   │   │           │   ├── ic_launcher.png
+│   │   │   │   │           │   └── ic_launcher_round.png
+│   │   │   │   │           ├── mipmap-mdpi-v4
+│   │   │   │   │           │   ├── ic_launcher.png
+│   │   │   │   │           │   └── ic_launcher_round.png
+│   │   │   │   │           ├── mipmap-xhdpi-v4
+│   │   │   │   │           │   ├── ic_launcher.png
+│   │   │   │   │           │   └── ic_launcher_round.png
+│   │   │   │   │           ├── mipmap-xxhdpi-v4
+│   │   │   │   │           │   ├── ic_launcher.png
+│   │   │   │   │           │   └── ic_launcher_round.png
+│   │   │   │   │           ├── mipmap-xxxhdpi-v4
+│   │   │   │   │           │   ├── ic_launcher.png
+│   │   │   │   │           │   └── ic_launcher_round.png
+│   │   │   │   │           └── values
+│   │   │   │   │               └── values.xml
+│   │   │   │   ├── project_dex_archive
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   │               ├── 2fd77116b919649182248b1ea7e05f0504cf38a8b373272a3881e0c67dde1ea1_0.jar
+│   │   │   │   │               ├── 2fd77116b919649182248b1ea7e05f0504cf38a8b373272a3881e0c67dde1ea1_1.jar
+│   │   │   │   │               ├── 2fd77116b919649182248b1ea7e05f0504cf38a8b373272a3881e0c67dde1ea1_2.jar
+│   │   │   │   │               ├── 2fd77116b919649182248b1ea7e05f0504cf38a8b373272a3881e0c67dde1ea1_3.jar
+│   │   │   │   │               ├── 2fd77116b919649182248b1ea7e05f0504cf38a8b373272a3881e0c67dde1ea1_4.jar
+│   │   │   │   │               ├── 2fd77116b919649182248b1ea7e05f0504cf38a8b373272a3881e0c67dde1ea1_5.jar
+│   │   │   │   │               ├── 2fd77116b919649182248b1ea7e05f0504cf38a8b373272a3881e0c67dde1ea1_6.jar
+│   │   │   │   │               ├── 2fd77116b919649182248b1ea7e05f0504cf38a8b373272a3881e0c67dde1ea1_7.jar
+│   │   │   │   │               └── com
+│   │   │   │   │                   ├── facebook
+│   │   │   │   │                   │   └── react
+│   │   │   │   │                   │       └── PackageList.dex
+│   │   │   │   │                   └── quickserve
+│   │   │   │   │                       ├── BuildConfig.dex
+│   │   │   │   │                       ├── MainActivity.dex
+│   │   │   │   │                       ├── MainApplication$reactNativeHost$1.dex
+│   │   │   │   │                       └── MainApplication.dex
+│   │   │   │   ├── ReactNativeVectorIcons
+│   │   │   │   │   └── fonts
+│   │   │   │   │       ├── AntDesign.ttf
+│   │   │   │   │       ├── Entypo.ttf
+│   │   │   │   │       ├── EvilIcons.ttf
+│   │   │   │   │       ├── Feather.ttf
+│   │   │   │   │       ├── FontAwesome5_Brands.ttf
+│   │   │   │   │       ├── FontAwesome5_Regular.ttf
+│   │   │   │   │       ├── FontAwesome5_Solid.ttf
+│   │   │   │   │       ├── FontAwesome6_Brands.ttf
+│   │   │   │   │       ├── FontAwesome6_Regular.ttf
+│   │   │   │   │       ├── FontAwesome6_Solid.ttf
+│   │   │   │   │       ├── FontAwesome.ttf
+│   │   │   │   │       ├── Fontisto.ttf
+│   │   │   │   │       ├── Foundation.ttf
+│   │   │   │   │       ├── Ionicons.ttf
+│   │   │   │   │       ├── MaterialCommunityIcons.ttf
+│   │   │   │   │       ├── MaterialIcons.ttf
+│   │   │   │   │       ├── Octicons.ttf
+│   │   │   │   │       ├── SimpleLineIcons.ttf
+│   │   │   │   │       └── Zocial.ttf
+│   │   │   │   ├── runtime_symbol_list
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugResources
+│   │   │   │   │           └── R.txt
+│   │   │   │   ├── signing_config_versions
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── writeDebugSigningConfigVersions
+│   │   │   │   │           └── signing-config-versions.json
+│   │   │   │   ├── source_set_path_map
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mapDebugSourceSetPaths
+│   │   │   │   │           └── file-map.txt
+│   │   │   │   ├── stable_resource_ids_file
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugResources
+│   │   │   │   │           └── stableIds.txt
+│   │   │   │   ├── stripped_native_libs
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── stripDebugDebugSymbols
+│   │   │   │   │           └── out
+│   │   │   │   │               └── lib
+│   │   │   │   │                   ├── arm64-v8a
+│   │   │   │   │                   │   ├── libappmodules.so
+│   │   │   │   │                   │   ├── libc++_shared.so
+│   │   │   │   │                   │   ├── libfbjni.so
+│   │   │   │   │                   │   ├── libgesturehandler.so
+│   │   │   │   │                   │   ├── libhermes.so
+│   │   │   │   │                   │   ├── libhermestooling.so
+│   │   │   │   │                   │   ├── libimagepipeline.so
+│   │   │   │   │                   │   ├── libjsi.so
+│   │   │   │   │                   │   ├── libnative-filters.so
+│   │   │   │   │                   │   ├── libnative-imagetranscoder.so
+│   │   │   │   │                   │   ├── libreact_codegen_rnscreens.so
+│   │   │   │   │                   │   ├── libreact_codegen_rnsvg.so
+│   │   │   │   │                   │   ├── libreact_codegen_safeareacontext.so
+│   │   │   │   │                   │   ├── libreactnative.so
+│   │   │   │   │                   │   ├── libreanimated.so
+│   │   │   │   │                   │   ├── librnscreens.so
+│   │   │   │   │                   │   └── libworklets.so
+│   │   │   │   │                   ├── armeabi-v7a
+│   │   │   │   │                   │   ├── libappmodules.so
+│   │   │   │   │                   │   ├── libc++_shared.so
+│   │   │   │   │                   │   ├── libfbjni.so
+│   │   │   │   │                   │   ├── libgesturehandler.so
+│   │   │   │   │                   │   ├── libhermes.so
+│   │   │   │   │                   │   ├── libhermestooling.so
+│   │   │   │   │                   │   ├── libimagepipeline.so
+│   │   │   │   │                   │   ├── libjsi.so
+│   │   │   │   │                   │   ├── libnative-filters.so
+│   │   │   │   │                   │   ├── libnative-imagetranscoder.so
+│   │   │   │   │                   │   ├── libreact_codegen_rnscreens.so
+│   │   │   │   │                   │   ├── libreact_codegen_rnsvg.so
+│   │   │   │   │                   │   ├── libreact_codegen_safeareacontext.so
+│   │   │   │   │                   │   ├── libreactnative.so
+│   │   │   │   │                   │   ├── libreanimated.so
+│   │   │   │   │                   │   ├── librnscreens.so
+│   │   │   │   │                   │   └── libworklets.so
+│   │   │   │   │                   ├── x86
+│   │   │   │   │                   │   ├── libappmodules.so
+│   │   │   │   │                   │   ├── libc++_shared.so
+│   │   │   │   │                   │   ├── libfbjni.so
+│   │   │   │   │                   │   ├── libgesturehandler.so
+│   │   │   │   │                   │   ├── libhermes.so
+│   │   │   │   │                   │   ├── libhermestooling.so
+│   │   │   │   │                   │   ├── libimagepipeline.so
+│   │   │   │   │                   │   ├── libjsi.so
+│   │   │   │   │                   │   ├── libnative-filters.so
+│   │   │   │   │                   │   ├── libnative-imagetranscoder.so
+│   │   │   │   │                   │   ├── libreact_codegen_rnscreens.so
+│   │   │   │   │                   │   ├── libreact_codegen_rnsvg.so
+│   │   │   │   │                   │   ├── libreact_codegen_safeareacontext.so
+│   │   │   │   │                   │   ├── libreactnative.so
+│   │   │   │   │                   │   ├── libreanimated.so
+│   │   │   │   │                   │   ├── librnscreens.so
+│   │   │   │   │                   │   └── libworklets.so
+│   │   │   │   │                   └── x86_64
+│   │   │   │   │                       ├── libappmodules.so
+│   │   │   │   │                       ├── libc++_shared.so
+│   │   │   │   │                       ├── libfbjni.so
+│   │   │   │   │                       ├── libgesturehandler.so
+│   │   │   │   │                       ├── libhermes.so
+│   │   │   │   │                       ├── libhermestooling.so
+│   │   │   │   │                       ├── libimagepipeline.so
+│   │   │   │   │                       ├── libjsi.so
+│   │   │   │   │                       ├── libnative-filters.so
+│   │   │   │   │                       ├── libnative-imagetranscoder.so
+│   │   │   │   │                       ├── libreact_codegen_rnscreens.so
+│   │   │   │   │                       ├── libreact_codegen_rnsvg.so
+│   │   │   │   │                       ├── libreact_codegen_safeareacontext.so
+│   │   │   │   │                       ├── libreactnative.so
+│   │   │   │   │                       ├── libreanimated.so
+│   │   │   │   │                       ├── librnscreens.so
+│   │   │   │   │                       └── libworklets.so
+│   │   │   │   ├── sub_project_dex_archive
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── symbol_list_with_package_name
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugResources
+│   │   │   │   │           └── package-aware-r.txt
+│   │   │   │   └── validate_signing_config
+│   │   │   │       └── debug
+│   │   │   │           └── validateSigningDebug
+│   │   │   ├── kotlin
+│   │   │   │   └── compileDebugKotlin
+│   │   │   │       ├── cacheable
+│   │   │   │       │   ├── caches-jvm
+│   │   │   │       │   │   ├── inputs
+│   │   │   │       │   │   │   ├── source-to-output.tab
+│   │   │   │       │   │   │   ├── source-to-output.tab_i
+│   │   │   │       │   │   │   ├── source-to-output.tab_i.len
+│   │   │   │       │   │   │   ├── source-to-output.tab.keystream
+│   │   │   │       │   │   │   ├── source-to-output.tab.keystream.len
+│   │   │   │       │   │   │   ├── source-to-output.tab.len
+│   │   │   │       │   │   │   └── source-to-output.tab.values.at
+│   │   │   │       │   │   ├── jvm
+│   │   │   │       │   │   │   └── kotlin
+│   │   │   │       │   │   │       ├── class-attributes.tab
+│   │   │   │       │   │   │       ├── class-attributes.tab_i
+│   │   │   │       │   │   │       ├── class-attributes.tab_i.len
+│   │   │   │       │   │   │       ├── class-attributes.tab.keystream
+│   │   │   │       │   │   │       ├── class-attributes.tab.keystream.len
+│   │   │   │       │   │   │       ├── class-attributes.tab.len
+│   │   │   │       │   │   │       ├── class-attributes.tab.values.at
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab_i
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab_i.len
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab.keystream
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab.keystream.len
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab.len
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab.values.at
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab_i
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab_i.len
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab.keystream
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab.keystream.len
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab.len
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab.values.at
+│   │   │   │       │   │   │       ├── proto.tab
+│   │   │   │       │   │   │       ├── proto.tab_i
+│   │   │   │       │   │   │       ├── proto.tab_i.len
+│   │   │   │       │   │   │       ├── proto.tab.keystream
+│   │   │   │       │   │   │       ├── proto.tab.keystream.len
+│   │   │   │       │   │   │       ├── proto.tab.len
+│   │   │   │       │   │   │       ├── proto.tab.values.at
+│   │   │   │       │   │   │       ├── source-to-classes.tab
+│   │   │   │       │   │   │       ├── source-to-classes.tab_i
+│   │   │   │       │   │   │       ├── source-to-classes.tab_i.len
+│   │   │   │       │   │   │       ├── source-to-classes.tab.keystream
+│   │   │   │       │   │   │       ├── source-to-classes.tab.keystream.len
+│   │   │   │       │   │   │       ├── source-to-classes.tab.len
+│   │   │   │       │   │   │       ├── source-to-classes.tab.values.at
+│   │   │   │       │   │   │       ├── subtypes.tab
+│   │   │   │       │   │   │       ├── subtypes.tab_i
+│   │   │   │       │   │   │       ├── subtypes.tab_i.len
+│   │   │   │       │   │   │       ├── subtypes.tab.keystream
+│   │   │   │       │   │   │       ├── subtypes.tab.keystream.len
+│   │   │   │       │   │   │       ├── subtypes.tab.len
+│   │   │   │       │   │   │       ├── subtypes.tab.values.at
+│   │   │   │       │   │   │       ├── supertypes.tab
+│   │   │   │       │   │   │       ├── supertypes.tab_i
+│   │   │   │       │   │   │       ├── supertypes.tab_i.len
+│   │   │   │       │   │   │       ├── supertypes.tab.keystream
+│   │   │   │       │   │   │       ├── supertypes.tab.keystream.len
+│   │   │   │       │   │   │       ├── supertypes.tab.len
+│   │   │   │       │   │   │       └── supertypes.tab.values.at
+│   │   │   │       │   │   └── lookups
+│   │   │   │       │   │       ├── counters.tab
+│   │   │   │       │   │       ├── file-to-id.tab
+│   │   │   │       │   │       ├── file-to-id.tab_i
+│   │   │   │       │   │       ├── file-to-id.tab_i.len
+│   │   │   │       │   │       ├── file-to-id.tab.keystream
+│   │   │   │       │   │       ├── file-to-id.tab.keystream.len
+│   │   │   │       │   │       ├── file-to-id.tab.len
+│   │   │   │       │   │       ├── file-to-id.tab.values.at
+│   │   │   │       │   │       ├── id-to-file.tab
+│   │   │   │       │   │       ├── id-to-file.tab_i
+│   │   │   │       │   │       ├── id-to-file.tab_i.len
+│   │   │   │       │   │       ├── id-to-file.tab.keystream
+│   │   │   │       │   │       ├── id-to-file.tab.keystream.len
+│   │   │   │       │   │       ├── id-to-file.tab.len
+│   │   │   │       │   │       ├── id-to-file.tab.values.at
+│   │   │   │       │   │       ├── lookups.tab
+│   │   │   │       │   │       ├── lookups.tab_i
+│   │   │   │       │   │       ├── lookups.tab_i.len
+│   │   │   │       │   │       ├── lookups.tab.keystream
+│   │   │   │       │   │       ├── lookups.tab.keystream.len
+│   │   │   │       │   │       ├── lookups.tab.len
+│   │   │   │       │   │       └── lookups.tab.values.at
+│   │   │   │       │   └── last-build.bin
+│   │   │   │       ├── classpath-snapshot
+│   │   │   │       │   └── shrunk-classpath-snapshot.bin
+│   │   │   │       └── local-state
+│   │   │   │           └── build-history.bin
+│   │   │   ├── outputs
+│   │   │   │   ├── apk
+│   │   │   │   │   └── debug
+│   │   │   │   │       ├── app-debug.apk
+│   │   │   │   │       └── output-metadata.json
+│   │   │   │   └── logs
+│   │   │   │       └── manifest-merger-debug-report.txt
+│   │   │   └── tmp
+│   │   │       ├── compileDebugJavaWithJavac
+│   │   │       │   ├── compileTransaction
+│   │   │       │   │   ├── backup-dir
+│   │   │       │   │   └── stash-dir
+│   │   │       │   │       └── PackageList.class.uniqueId0
+│   │   │       │   └── previous-compilation-data.bin
+│   │   │       └── kotlin-classes
+│   │   │           └── debug
+│   │   │               ├── com
+│   │   │               │   └── quickserve
+│   │   │               │       ├── MainActivity.class
+│   │   │               │       ├── MainApplication$reactNativeHost$1.class
+│   │   │               │       └── MainApplication.class
+│   │   │               └── META-INF
+│   │   │                   └── app_debug.kotlin_module
+│   │   ├── build.gradle
+│   │   ├── debug.keystore
+│   │   ├── google-services.json
+│   │   ├── proguard-rules.pro
+│   │   └── src
+│   │       ├── debug
+│   │       │   └── AndroidManifest.xml
+│   │       └── main
+│   │           ├── AndroidManifest.xml
+│   │           ├── java
+│   │           │   └── com
+│   │           │       └── quickserve
+│   │           │           ├── MainActivity.kt
+│   │           │           └── MainApplication.kt
+│   │           └── res
+│   │               ├── drawable
+│   │               │   └── rn_edit_text_material.xml
+│   │               ├── mipmap-hdpi
+│   │               │   ├── ic_launcher.png
+│   │               │   └── ic_launcher_round.png
+│   │               ├── mipmap-mdpi
+│   │               │   ├── ic_launcher.png
+│   │               │   └── ic_launcher_round.png
+│   │               ├── mipmap-xhdpi
+│   │               │   ├── ic_launcher.png
+│   │               │   └── ic_launcher_round.png
+│   │               ├── mipmap-xxhdpi
+│   │               │   ├── ic_launcher.png
+│   │               │   └── ic_launcher_round.png
+│   │               ├── mipmap-xxxhdpi
+│   │               │   ├── ic_launcher.png
+│   │               │   └── ic_launcher_round.png
+│   │               └── values
+│   │                   ├── strings.xml
+│   │                   └── styles.xml
+│   ├── build
+│   │   ├── generated
+│   │   │   └── autolinking
+│   │   │       ├── autolinking.json
+│   │   │       ├── package.json.sha
+│   │   │       └── package-lock.json.sha
+│   │   └── reports
+│   │       └── problems
+│   │           └── problems-report.html
+│   ├── build.gradle
+│   ├── gradle
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradle.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   └── settings.gradle
+├── app.json
+├── App.tsx
+├── babel.config.js
+├── Gemfile
+├── index.js
+├── ios
+│   ├── Podfile
+│   ├── QUickServe
+│   │   ├── AppDelegate.swift
+│   │   ├── Images.xcassets
+│   │   │   ├── AppIcon.appiconset
+│   │   │   │   └── Contents.json
+│   │   │   └── Contents.json
+│   │   ├── Info.plist
+│   │   ├── LaunchScreen.storyboard
+│   │   └── PrivacyInfo.xcprivacy
+│   └── QUickServe.xcodeproj
+│       ├── project.pbxproj
+│       └── xcshareddata
+│           └── xcschemes
+│               └── QUickServe.xcscheme
+├── jest.config.js
+├── metro.config.js
+├── package.json
+├── package-lock.json
+├── README.md
+├── src
+│   ├── assets
+│   │   ├── ac-repair.png
+│   │   ├── babysitter.png
+│   │   ├── beautician.png
+│   │   ├── carpenter.png
+│   │   ├── close.png
+│   │   ├── cook.png
+│   │   ├── driver.png
+│   │   ├── electrician.png
+│   │   ├── gardener.png
+│   │   ├── home-cleaning.png
+│   │   ├── laundry.png
+│   │   ├── maid.png
+│   │   ├── mechanic.png
+│   │   ├── microphone.png
+│   │   ├── others.png
+│   │   ├── painter.png
+│   │   ├── plumber.png
+│   │   ├── profile.jpg
+│   │   ├── search.png
+│   │   ├── stack.png
+│   │   └── tutor.png
+│   ├── components
+│   │   ├── CategoryGrid.tsx
+│   │   ├── Category.tsx
+│   │   ├── ProviderCard.tsx
+│   │   ├── ProviderList.tsx
+│   │   ├── ProvidersGrid.tsx
+│   │   ├── Search.tsx
+│   │   └── TopBar.tsx
+│   ├── data
+│   │   ├── category.json
+│   │   ├── dummy_service_providers.json
+│   │   ├── services.json
+│   │   ├── updated_service_providers.json
+│   │   └── updated_service_providers_with_images.json
+│   ├── screens
+│   │   ├── Home.tsx
+│   │   ├── ProviderProfile.tsx
+│   │   └── ServiceScreen.tsx
+│   └── store
+│       ├── searchSlice.ts
+│       └── store.ts
+├── structure.txt
+├── __tests__
+│   └── App.test.tsx
+└── tsconfig.json
+
+550 directories, 1332 files
