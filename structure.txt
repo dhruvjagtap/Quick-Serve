@@ -89,6 +89,7 @@
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1150_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_123_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_124_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_125_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_126_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1272_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1276_timing.txt
@@ -173,6 +174,7 @@
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1039_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1147_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_122_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_125_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1269_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_126_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1276_timing.txt
@@ -203,6 +205,7 @@
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2416_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_2927_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_326_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_351_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_353_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_354_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_355_timing.txt
@@ -252,6 +255,7 @@
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1046_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1160_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_122_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_125_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_126_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1272_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1276_timing.txt
@@ -328,6 +332,7 @@
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_1037_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_1046_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_1151_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_125_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_126_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_1271_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_1279_timing.txt
@@ -356,6 +361,7 @@
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_2927_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_326_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_353_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_354_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_355_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_358_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_359_timing.txt
@@ -1809,6 +1815,8 @@
 ├── app.json
 ├── App.tsx
 ├── babel.config.js
+├── firebase
+│   └── config.ts
 ├── Gemfile
 ├── index.js
 ├── ios
@@ -1869,10 +1877,19 @@
 │   │   ├── services.json
 │   │   ├── updated_service_providers.json
 │   │   └── updated_service_providers_with_images.json
+│   ├── navigation
+│   │   └── AppNavigator.tsx
 │   ├── screens
-│   │   ├── Home.tsx
+│   │   ├── auth
+│   │   │   ├── CustomerLogin.tsx
+│   │   │   ├── CustomerSignUp.tsx
+│   │   │   ├── ProviderLogin.tsx
+│   │   │   └── ProviderSignUp.tsx
+│   │   ├── CustomerHome.tsx
 │   │   ├── ProviderProfile.tsx
-│   │   └── ServiceScreen.tsx
+│   │   ├── ServiceScreen.tsx
+│   │   ├── SplashScreen.tsx
+│   │   └── WelcomeScreen.tsx
 │   └── store
 │       ├── searchSlice.ts
 │       └── store.ts
@@ -1881,4 +1898,4 @@
 │   └── App.test.tsx
 └── tsconfig.json
 
-550 directories, 1332 files
+553 directories, 1346 files
