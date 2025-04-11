@@ -1,23 +1,26 @@
+// src/screens/CustomerHome.tsx
 import React from 'react';
 import {
   ScrollView,
   StyleSheet,
   View,
 } from 'react-native';
-import { useNavigation } from '@react-navigation/native'; // Import useNavigation hook
+import { useNavigation, DrawerActions } from '@react-navigation/native';
 
-
-import TopBar from '../components/TopBar'; // Fixed path
+import TopBar from '../components/TopBar';
 import Search from '../components/Search';
-import CategoryGrid from '../components/CategoryGrid'; // Fixed typo
+import CategoryGrid from '../components/CategoryGrid';
+
+
 
 const CustomerHome: React.FC = () => {
-  const navigation = useNavigation(); // Access navigation object
-
+  
   return (
     <View style={styles.container}>
-      {/* Dynamic TopBar */}
-      <TopBar title="Quick Serve" onBackPress={() => navigation.goBack()} />
+      {/* Menu TopBar */}
+      <TopBar
+        title="Quick Serve"  
+      />
 
       {/* Search Component */}
       <Search />
@@ -36,11 +39,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: '100%',
     height: '100%',
-  },
-  font: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: '#0e0e0e',
   },
 });
 

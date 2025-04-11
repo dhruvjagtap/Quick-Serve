@@ -55,6 +55,26 @@
 │   │   │   │   ├── assets
 │   │   │   │   │   └── debug
 │   │   │   │   │       └── mergeDebugAssets
+│   │   │   │   │           └── fonts
+│   │   │   │   │               ├── AntDesign.ttf
+│   │   │   │   │               ├── Entypo.ttf
+│   │   │   │   │               ├── EvilIcons.ttf
+│   │   │   │   │               ├── Feather.ttf
+│   │   │   │   │               ├── FontAwesome5_Brands.ttf
+│   │   │   │   │               ├── FontAwesome5_Regular.ttf
+│   │   │   │   │               ├── FontAwesome5_Solid.ttf
+│   │   │   │   │               ├── FontAwesome6_Brands.ttf
+│   │   │   │   │               ├── FontAwesome6_Regular.ttf
+│   │   │   │   │               ├── FontAwesome6_Solid.ttf
+│   │   │   │   │               ├── FontAwesome.ttf
+│   │   │   │   │               ├── Fontisto.ttf
+│   │   │   │   │               ├── Foundation.ttf
+│   │   │   │   │               ├── Ionicons.ttf
+│   │   │   │   │               ├── MaterialCommunityIcons.ttf
+│   │   │   │   │               ├── MaterialIcons.ttf
+│   │   │   │   │               ├── Octicons.ttf
+│   │   │   │   │               ├── SimpleLineIcons.ttf
+│   │   │   │   │               └── Zocial.ttf
 │   │   │   │   ├── compatible_screen_manifest
 │   │   │   │   │   └── debug
 │   │   │   │   │       └── createDebugCompatibleScreenManifests
@@ -67,6 +87,27 @@
 │   │   │   │   │   └── debug
 │   │   │   │   │       └── compressDebugAssets
 │   │   │   │   │           └── out
+│   │   │   │   │               └── assets
+│   │   │   │   │                   └── fonts
+│   │   │   │   │                       ├── AntDesign.ttf.jar
+│   │   │   │   │                       ├── Entypo.ttf.jar
+│   │   │   │   │                       ├── EvilIcons.ttf.jar
+│   │   │   │   │                       ├── Feather.ttf.jar
+│   │   │   │   │                       ├── FontAwesome5_Brands.ttf.jar
+│   │   │   │   │                       ├── FontAwesome5_Regular.ttf.jar
+│   │   │   │   │                       ├── FontAwesome5_Solid.ttf.jar
+│   │   │   │   │                       ├── FontAwesome6_Brands.ttf.jar
+│   │   │   │   │                       ├── FontAwesome6_Regular.ttf.jar
+│   │   │   │   │                       ├── FontAwesome6_Solid.ttf.jar
+│   │   │   │   │                       ├── FontAwesome.ttf.jar
+│   │   │   │   │                       ├── Fontisto.ttf.jar
+│   │   │   │   │                       ├── Foundation.ttf.jar
+│   │   │   │   │                       ├── Ionicons.ttf.jar
+│   │   │   │   │                       ├── MaterialCommunityIcons.ttf.jar
+│   │   │   │   │                       ├── MaterialIcons.ttf.jar
+│   │   │   │   │                       ├── Octicons.ttf.jar
+│   │   │   │   │                       ├── SimpleLineIcons.ttf.jar
+│   │   │   │   │                       └── Zocial.ttf.jar
 │   │   │   │   ├── cxx
 │   │   │   │   │   ├── Debug
 │   │   │   │   │   │   └── 585q5b4x
@@ -86,6 +127,7 @@
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1034_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1038_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1040_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1061_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1150_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_123_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_124_timing.txt
@@ -94,6 +136,7 @@
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1272_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1276_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_129_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_130_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_131_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_133_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_134_timing.txt
@@ -123,6 +166,7 @@
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_349_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_350_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_351_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_354_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_355_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_357_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_359_timing.txt
@@ -130,11 +174,13 @@
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_365_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_376_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_521_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_526_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_535_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_575_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_577_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_578_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_583_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_586_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_591_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_594_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_602_timing.txt
@@ -144,9 +190,12 @@
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_797_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_802_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_806_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_813_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_816_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_820_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_824_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_826_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_829_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_867_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_943_timing.txt
 │   │   │   │   │   │       │   │   ├── metadata_generation_record.json
@@ -172,6 +221,7 @@
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1034_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1037_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1039_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1061_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1147_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_122_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_125_timing.txt
@@ -215,13 +265,16 @@
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_365_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_371_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_521_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_531_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_535_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_572_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_577_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_578_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_586_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_587_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_593_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_594_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_595_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_602_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_634_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_737_timing.txt
@@ -232,6 +285,8 @@
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_813_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_820_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_826_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_829_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_838_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_869_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_943_timing.txt
 │   │   │   │   │   │       │   │   ├── metadata_generation_record.json
@@ -253,6 +308,7 @@
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1034_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1037_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1046_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1061_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1160_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_122_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_125_timing.txt
@@ -263,6 +319,7 @@
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_128_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_131_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_132_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_134_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_135_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_1363_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_136_timing.txt
@@ -287,19 +344,23 @@
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_354_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_355_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_359_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_360_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_361_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_362_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_365_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_368_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_371_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_521_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_526_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_535_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_572_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_577_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_578_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_579_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_586_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_593_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_594_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_597_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_602_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_634_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_747_timing.txt
@@ -308,8 +369,10 @@
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_808_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_809_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_813_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_816_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_820_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_826_timing.txt
+│   │   │   │   │   │       │   │   ├── generate_cxx_metadata_838_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_869_timing.txt
 │   │   │   │   │   │       │   │   ├── generate_cxx_metadata_943_timing.txt
 │   │   │   │   │   │       │   │   ├── metadata_generation_record.json
@@ -331,6 +394,7 @@
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_1034_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_1037_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_1046_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_1061_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_1151_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_125_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_126_timing.txt
@@ -339,6 +403,7 @@
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_128_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_131_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_132_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_134_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_1360_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_136_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_137_timing.txt
@@ -365,11 +430,13 @@
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_355_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_358_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_359_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_360_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_362_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_365_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_368_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_371_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_521_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_526_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_535_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_577_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_578_timing.txt
@@ -377,6 +444,7 @@
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_585_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_586_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_594_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_597_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_602_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_634_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_744_timing.txt
@@ -386,7 +454,9 @@
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_809_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_813_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_820_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_825_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_826_timing.txt
+│   │   │   │   │   │       │       ├── generate_cxx_metadata_833_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_867_timing.txt
 │   │   │   │   │   │       │       ├── generate_cxx_metadata_943_timing.txt
 │   │   │   │   │   │       │       ├── metadata_generation_record.json
@@ -1503,23 +1573,23 @@
 │   │   │   │   │   └── debug
 │   │   │   │   │       └── dexBuilderDebug
 │   │   │   │   │           └── out
-│   │   │   │   │               ├── 2fd77116b919649182248b1ea7e05f0504cf38a8b373272a3881e0c67dde1ea1_0.jar
-│   │   │   │   │               ├── 2fd77116b919649182248b1ea7e05f0504cf38a8b373272a3881e0c67dde1ea1_1.jar
-│   │   │   │   │               ├── 2fd77116b919649182248b1ea7e05f0504cf38a8b373272a3881e0c67dde1ea1_2.jar
-│   │   │   │   │               ├── 2fd77116b919649182248b1ea7e05f0504cf38a8b373272a3881e0c67dde1ea1_3.jar
-│   │   │   │   │               ├── 2fd77116b919649182248b1ea7e05f0504cf38a8b373272a3881e0c67dde1ea1_4.jar
-│   │   │   │   │               ├── 2fd77116b919649182248b1ea7e05f0504cf38a8b373272a3881e0c67dde1ea1_5.jar
-│   │   │   │   │               ├── 2fd77116b919649182248b1ea7e05f0504cf38a8b373272a3881e0c67dde1ea1_6.jar
-│   │   │   │   │               ├── 2fd77116b919649182248b1ea7e05f0504cf38a8b373272a3881e0c67dde1ea1_7.jar
-│   │   │   │   │               └── com
-│   │   │   │   │                   ├── facebook
-│   │   │   │   │                   │   └── react
-│   │   │   │   │                   │       └── PackageList.dex
-│   │   │   │   │                   └── quickserve
-│   │   │   │   │                       ├── BuildConfig.dex
-│   │   │   │   │                       ├── MainActivity.dex
-│   │   │   │   │                       ├── MainApplication$reactNativeHost$1.dex
-│   │   │   │   │                       └── MainApplication.dex
+│   │   │   │   │               ├── com
+│   │   │   │   │               │   ├── facebook
+│   │   │   │   │               │   │   └── react
+│   │   │   │   │               │   │       └── PackageList.dex
+│   │   │   │   │               │   └── quickserve
+│   │   │   │   │               │       ├── BuildConfig.dex
+│   │   │   │   │               │       ├── MainActivity.dex
+│   │   │   │   │               │       ├── MainApplication$reactNativeHost$1.dex
+│   │   │   │   │               │       └── MainApplication.dex
+│   │   │   │   │               ├── de19d5fe947aaf4d0c3da61c2e281fa63837d10c0ec6b3764de6830fec49503a_0.jar
+│   │   │   │   │               ├── de19d5fe947aaf4d0c3da61c2e281fa63837d10c0ec6b3764de6830fec49503a_1.jar
+│   │   │   │   │               ├── de19d5fe947aaf4d0c3da61c2e281fa63837d10c0ec6b3764de6830fec49503a_2.jar
+│   │   │   │   │               ├── de19d5fe947aaf4d0c3da61c2e281fa63837d10c0ec6b3764de6830fec49503a_3.jar
+│   │   │   │   │               ├── de19d5fe947aaf4d0c3da61c2e281fa63837d10c0ec6b3764de6830fec49503a_4.jar
+│   │   │   │   │               ├── de19d5fe947aaf4d0c3da61c2e281fa63837d10c0ec6b3764de6830fec49503a_5.jar
+│   │   │   │   │               ├── de19d5fe947aaf4d0c3da61c2e281fa63837d10c0ec6b3764de6830fec49503a_6.jar
+│   │   │   │   │               └── de19d5fe947aaf4d0c3da61c2e281fa63837d10c0ec6b3764de6830fec49503a_7.jar
 │   │   │   │   ├── ReactNativeVectorIcons
 │   │   │   │   │   └── fonts
 │   │   │   │   │       ├── AntDesign.ttf
@@ -1841,11 +1911,12 @@
 ├── package-lock.json
 ├── README.md
 ├── src
-│   ├── assets
-│   │   ├── ac-repair.png
+│   ├── assets                       - Stores static assets like images, icons, and fonts used throughout the app.
+│   │   ├── ac-repair.png            
 │   │   ├── babysitter.png
 │   │   ├── beautician.png
 │   │   ├── carpenter.png
+│   │   ├── chat.png
 │   │   ├── close.png
 │   │   ├── cook.png
 │   │   ├── driver.png
@@ -1862,40 +1933,72 @@
 │   │   ├── profile.jpg
 │   │   ├── search.png
 │   │   ├── stack.png
+│   │   ├── telephone.png
 │   │   └── tutor.png
 │   ├── components
-│   │   ├── CategoryGrid.tsx
-│   │   ├── Category.tsx
-│   │   ├── ProviderCard.tsx
-│   │   ├── ProviderList.tsx
-│   │   ├── ProvidersGrid.tsx
-│   │   ├── Search.tsx
-│   │   └── TopBar.tsx
+|   |   ├── CustomDrawer.tsx     -   Custom drawer code
+│   │   ├── CategoryGrid.tsx     -   Displays a grid layout of service categories (e.g., Cleaning, Plumbing, etc.)
+│   │   ├── Category.tsx         -   Individual category card component used inside CategoryGrid
+│   │   ├── ProviderCard.tsx     -   Renders individual service provider information (name, image, rating, etc.)
+│   │   ├── ProviderList.tsx     -   Lists multiple ProviderCard components (could be vertically scrollable)
+│   │   ├── ProvidersGrid.tsx    -   Similar to ProviderList but uses a grid layout for service providers
+│   │   ├── Search.tsx           -   Search bar component for finding services or providers
+│   │   └── TopBar.tsx           -   Top navigation bar used across various screens there is an image called stack.png it is used to open and close the drawer (title)
+│   ├── context
+│   │   └── AuthContext.tsx          Global authentication context managing the current user, loading state, and user role (customer/provider)
 │   ├── data
-│   │   ├── category.json
+│   │   ├── category.json                                List of service categories used in the app (title, icon, etc.)
 │   │   ├── dummy_service_providers.json
 │   │   ├── services.json
 │   │   ├── updated_service_providers.json
 │   │   └── updated_service_providers_with_images.json
 │   ├── navigation
-│   │   └── AppNavigator.tsx
+│   │   ├── AppNavigator.tsx         Main navigation setup (handles route switching between customer/provider/auth/dashboard screens)
+|   |   ├── CustomerDrawerNavigator.tsx      -customer drawer navigator
+|   |   └── ProviderDrawerNavigator.tsx      -provider drawer navigator
+|   | 
 │   ├── screens
 │   │   ├── auth
-│   │   │   ├── CustomerLogin.tsx
-│   │   │   ├── CustomerSignUp.tsx
-│   │   │   ├── ProviderLogin.tsx
-│   │   │   └── ProviderSignUp.tsx
-│   │   ├── CustomerHome.tsx
-│   │   ├── ProviderProfile.tsx
-│   │   ├── ServiceScreen.tsx
-│   │   ├── SplashScreen.tsx
-│   │   └── WelcomeScreen.tsx
-│   └── store
-│       ├── searchSlice.ts
-│       └── store.ts
+│   │   │   ├── CustomerLogin.tsx   -  Login screen specifically for customers
+│   │   │   ├── CustomerSignUp.tsx  -  Sign-up screen for new customers
+│   │   │   ├── ProviderLogin.tsx   -  Login screen specifically for service providers
+│   │   │   └── ProviderSignUp.tsx  -  Sign-up screen for new service providers
+│   │   ├── Booking.tsx             -  Screen where a customer can book a service with a provider
+│   │   ├── Chat.tsx                -  Real-time chat interface between customer and provider
+│   │   ├── CustomerHome.tsx        -  Main home screen for customers (after login)
+│   │   ├── ProviderHome.tsx        -  Dashboard/home for service providers after logging in
+│   │   ├── ProviderProfile.tsx     -  Provider's profile page (editable info, past bookings, ratings, etc.)
+│   │   ├── ServiceScreen.tsx       -  Detailed view of a specific service with description, pricing, etc.
+│   │   ├── SplashScreen.tsx        -  Initial loading screen shown when app launches
+│   │   └── WelcomeScreen.tsx       -  Intro screen with "Login as Customer" or "Login as Provider" options
+│   ├── store
+│   │   ├── searchSlice.ts
+│   │   └── store.ts
+│   └── types.ts
 ├── structure.txt
 ├── __tests__
 │   └── App.test.tsx
 └── tsconfig.json
 
-553 directories, 1346 files
+557 directories, 1420 files
+===========================================================================================
+
+CustomerLogin.tsx:75 The action 'REPLACE' with payload {"name":"CustomerDrawer"} was not handled by any navigator.
+
+Do you have a screen named 'CustomerDrawer'?
+
+If you're trying to navigate to a screen in a nested navigator, see https://reactnavigation.org/docs/nesting-navigators#navigating-to-a-screen-in-a-nested-navigator.
+
+If you're using conditional rendering, navigation will happen automatically and you shouldn't navigate manually, see.
+
+This is a development-only warning and won't be shown in production.
+
+============================================================================================
+
+console.js:654 Error: [Reanimated] Failed to create a worklet. See https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#failed-to-create-a-worklet for more details., js engine: hermes Error Component Stack:
+
+======================================
+
+console.js:654 Warning: TypeError: Cannot read property 'makeMutable' of undefined
+
+========================================

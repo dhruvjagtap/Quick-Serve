@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, FlatList, Switch } from 'react-native';
 import { auth } from '../../firebase/config';
 import { signOut } from 'firebase/auth';
+import TopBar from '../components/TopBar';
 
 const upcomingBookings = [
   { id: '1', customer: 'Riya Sharma', date: 'April 2, 10:00 AM', service: 'Home Cleaning' },
@@ -21,6 +22,7 @@ const ProviderHome = () => {
 
   return (
     <View style={styles.container}>
+      {/* <TopBar title="Quick Serve" /> */}
       <Text style={styles.heading}>Welcome, Provider!</Text>
 
       <View style={styles.statusContainer}>

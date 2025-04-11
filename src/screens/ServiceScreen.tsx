@@ -8,7 +8,7 @@ const ServiceScreen = ({ route, navigation }: any) => {
 
   return (
     <View style={styles.container}>
-      <TopBar title={serviceName} onBackPress={() => navigation.goBack()} />
+      <TopBar title={serviceName} />
       <ProvidersGrid filter={serviceName} />
     </View>
   );

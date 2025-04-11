@@ -12,15 +12,15 @@ import {
   Platform,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-} from 'firebase/auth';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { updateProfile, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../../firebase/config';
+import { AuthStackParamList } from '../../types';
 
+type NavigationProp = NativeStackNavigationProp<AuthStackParamList>;
 
 const CustomerLogin = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProp>();
   const [isSignUp, setIsSignUp] = useState(false);
 
   const [name, setName] = useState('');
@@ -56,7 +56,11 @@ const CustomerLogin = () => {
       }
 
       try {
-        await createUserWithEmailAndPassword(auth, email, password);
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+        await updateProfile(userCredential.user, {
+          displayName: name,
+        });
+
         Alert.alert('Account created! You can now log in.');
         setIsSignUp(false);
       } catch (error: any) {
@@ -65,7 +69,7 @@ const CustomerLogin = () => {
     } else {
       try {
         await signInWithEmailAndPassword(auth, email, password);
-        navigation.navigate('CustomerHome' as never);
+        // navigation.navigate('CustomerDrawerNavigator');
       } catch (error: any) {
         Alert.alert('Login failed', error.message);
       }
@@ -155,6 +159,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 20,
     alignSelf: 'center',
+    color: '#34718F',
   },
   input: {
     height: 50,
@@ -165,7 +170,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   button: {
-    backgroundColor: '#007AFF',
+    backgroundColor: '#34718F',
     paddingVertical: 14,
     borderRadius: 8,
     marginTop: 10,
@@ -178,7 +183,7 @@ const styles = StyleSheet.create({
   },
   toggleText: {
     marginTop: 20,
-    color: '#007AFF',
+    color: '#34718F',
     alignSelf: 'center',
     fontSize: 14,
   },

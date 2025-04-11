@@ -13,8 +13,8 @@ import {
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
-import { auth } from '../../../firebase/config';
-import { AuthStackParamList } from '../../types'
+import { auth, db } from '../../../firebase/config';
+import { doc, setDoc } from 'firebase/firestore';
 
 const CustomerSignUp = () => {
   const navigation = useNavigation();
@@ -26,7 +26,6 @@ const CustomerSignUp = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
 
   const handleSignUp = async () => {
-    // Basic validation
     if (!name || !phone || !email || !password || !confirmPassword) {
       Alert.alert('Error', 'Please fill in all fields.');
       return;
@@ -40,21 +39,25 @@ const CustomerSignUp = () => {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
 
-      // Update display name
-      await updateProfile(userCredential.user, {
-        displayName: name,
+      await updateProfile(userCredential.user, { displayName: name });
+
+      await setDoc(doc(db, 'users', userCredential.user.uid), {
+        name,
+        email,
+        phone,
+        role: 'customer',
+        createdAt: new Date(),
       });
 
       Alert.alert('Success', 'Account created successfully!');
-      navigation.navigate('CustomerLogin' as never); // Make sure this route exists
-    }  catch (error: unknown) {
-        let errorMessage = 'Something went wrong.';
-        if (error instanceof Error) {
-          errorMessage = error.message;
-        }
-        Alert.alert('Sign Up Failed', errorMessage);
+      navigation.navigate('CustomerLogin' as never);
+    } catch (error: unknown) {
+      let errorMessage = 'Something went wrong.';
+      if (error instanceof Error) {
+        errorMessage = error.message;
       }
-      
+      Alert.alert('Sign Up Failed', errorMessage);
+    }
   };
 
   return (
@@ -70,7 +73,6 @@ const CustomerSignUp = () => {
         value={name}
         onChangeText={setName}
       />
-
       <TextInput
         style={styles.input}
         placeholder="Phone Number"
@@ -78,7 +80,6 @@ const CustomerSignUp = () => {
         value={phone}
         onChangeText={setPhone}
       />
-
       <TextInput
         style={styles.input}
         placeholder="Email"
@@ -87,7 +88,6 @@ const CustomerSignUp = () => {
         value={email}
         onChangeText={setEmail}
       />
-
       <TextInput
         style={styles.input}
         placeholder="Password"
@@ -95,7 +95,6 @@ const CustomerSignUp = () => {
         value={password}
         onChangeText={setPassword}
       />
-
       <TextInput
         style={styles.input}
         placeholder="Confirm Password"
@@ -109,9 +108,7 @@ const CustomerSignUp = () => {
       </TouchableOpacity>
 
       <TouchableOpacity onPress={() => navigation.navigate('CustomerLogin' as never)}>
-        <Text style={styles.switchText}>
-          Already have an account? Login
-        </Text>
+        <Text style={styles.switchText}>Already have an account? Login</Text>
       </TouchableOpacity>
     </KeyboardAvoidingView>
   );
@@ -131,6 +128,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 20,
     alignSelf: 'center',
+    color: '#34718F',
   },
   input: {
     height: 50,
@@ -141,7 +139,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   button: {
-    backgroundColor: '#007AFF',
+    backgroundColor: '#34718F',
     paddingVertical: 14,
     borderRadius: 8,
     marginTop: 10,
@@ -154,7 +152,7 @@ const styles = StyleSheet.create({
   },
   switchText: {
     marginTop: 20,
-    color: '#007AFF',
+    color: '#34718F',
     alignSelf: 'center',
     fontSize: 14,
   },

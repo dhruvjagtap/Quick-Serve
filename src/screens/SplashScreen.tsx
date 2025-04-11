@@ -3,9 +3,10 @@
 import React, { useEffect, useRef } from 'react';
 import { View, Text, StyleSheet, Animated } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { RootStackParamList } from '../navigation/AppNavigator'; // adjust path if needed
+// import { RootStackParamList } from '../navigation/AppNavigator'; // adjust path if needed
+import { AuthStackParamList } from '../types';
 
-type Props = NativeStackScreenProps<RootStackParamList, 'Splash'>;
+type Props = NativeStackScreenProps<AuthStackParamList, 'Splash'>;
 
 const SplashScreen = ({ navigation }: Props) => {
   const opacity = useRef(new Animated.Value(0)).current;

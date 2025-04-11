@@ -43,16 +43,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: '#fff',
+    backgroundColor: '#34718F',
   },
   title: {
     fontSize: 28,
     marginBottom: 40,
-    color: '#4B7BE5',
+    color: '#fff',
     fontWeight: 'bold',
   },
   button: {
-    backgroundColor: '#4B7BE5',
+    backgroundColor: '#fff',
     paddingVertical: 12,
     paddingHorizontal: 30,
     borderRadius: 8,
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     width: '80%',
   },
   buttonText: {
-    color: '#fff',
+    color: '#34718F',
     textAlign: 'center',
     fontSize: 16,
   },
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   linkText: {
-    color: '#4B7BE5',
+    color: '#fff',
     fontSize: 14,
   },
 });

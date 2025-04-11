@@ -1,20 +1,30 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
+import { useNavigation, DrawerActions } from '@react-navigation/native';
+import Icon from 'react-native-vector-icons/Ionicons'; // or MaterialIcons, Feather, etc.
 
-interface TopBarProps {
-  title: string;                    // Dynamic title
-  onBackPress?: () => void;         // Back navigation handler (optional)
-}
+type TopBarProps = {
+  title: string;
+};
 
-const TopBar: React.FC<TopBarProps> = ({ title, onBackPress }) => {
+const TopBar: React.FC<TopBarProps> = ({ title}) => {
+  const navigation = useNavigation();
+
+  const toggleDrawer = () => {
+    navigation.dispatch(DrawerActions.toggleDrawer());
+  };
+
   return (
     <View style={styles.container}>
       {/* Back or Menu Icon */}
-      <TouchableOpacity onPress={onBackPress}>
-        <Image source={require('../assets/stack.png')} style={styles.menuIcon} />
+      <TouchableOpacity onPress={toggleDrawer} style={styles.menuButton}>
+        <Image
+          source={require('../assets/stack.png')} // Make sure the path is correct
+          style={styles.menuIcon}
+        />
       </TouchableOpacity>
 
-      {/* Dynamic Title */}
+      {/* Title */}
       <Text style={styles.font}>{title}</Text>
     </View>
   );
@@ -22,25 +32,33 @@ const TopBar: React.FC<TopBarProps> = ({ title, onBackPress }) => {
 
 const styles = StyleSheet.create({
   container: {
-    height: 80,
+    height: 60,
     backgroundColor: '#023047',
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'flex-start',
+    borderBottomWidth: 1,
+    paddingHorizontal: 16,
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
     shadowRadius: 3,
     width: '100%',
-    paddingLeft: 20,
   },
-  menuIcon: {
-    width: 30,
-    height: 30,
-    marginRight: 10,
+  iconContainer: {
+    marginRight: 16,
   },
   font: {
     fontSize: 20,
     fontWeight: 'bold',
     color: 'white',
+  },
+  menuIcon: {
+    width: 24,
+    height: 24,
+    resizeMode: 'contain',
+  },
+  menuButton: {
+    marginRight: 12,
   },
 });
 
