@@ -77,7 +77,7 @@ const ProviderProfile: React.FC<ProviderProfileProps> = ({ route, navigation }) 
       <TopBar title={provider.name}  />
 
       <ScrollView contentContainerStyle={styles.content}>
-        <Image source={{ uri: provider.image_url }} style={styles.image} />
+        <Image source={{ uri: provider.image_url }} style={styles.image} defaultSource={require('../assets/profile.jpg')}/>
         <Text style={styles.name}>{provider.name}</Text>
         <Text style={styles.profession}>{provider.profession}</Text>
 

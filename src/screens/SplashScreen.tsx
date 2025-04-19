@@ -26,7 +26,7 @@ const SplashScreen = ({ navigation }: Props) => {
   return (
     <View style={styles.container}>
       <Animated.Text style={[styles.logoText, { opacity }]}>
-        QuickServe
+        Quick Serve
       </Animated.Text>
     </View>
   );

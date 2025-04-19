@@ -1,5 +1,5 @@
 // ProviderSignUp.tsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -61,10 +61,18 @@ const ProviderSignUp = () => {
     }
     return true;
   };
+
+  useEffect(() => {
+    fetchLocation();
+  }, []);
+  
   
   const fetchLocation = async () => {
     const hasPermission = await requestLocationPermission();
-    if (!hasPermission) return;
+    if (!hasPermission) {
+      Alert.alert('Permission Denied', 'Location permission is required.');
+      return;
+    }
   
     Geolocation.getCurrentPosition(
       position => {
@@ -73,10 +81,12 @@ const ProviderSignUp = () => {
       },
       error => {
         console.log('Location error:', error);
+        Alert.alert('Location Error', 'Failed to fetch location.');
       },
       { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 },
     );
   };
+  
   
 
   const handleImagePick = async () => {
@@ -92,15 +102,21 @@ const ProviderSignUp = () => {
   };
 
   const handleSignUp = async () => {
+    // Validate password length before proceeding
+    if (password.length < 8) {
+      Alert.alert('Password must be at least 8 characters');
+      return;
+    }
+  
     if (!name || !email || !password || !phone || !service || !fees || !experience || !availability || !address) {
       Alert.alert('Validation', 'Please fill all fields.');
       return;
     }
-
+  
     try {
       const userCred = await auth().createUserWithEmailAndPassword(email, password);
       const userId = userCred.user.uid;
-
+  
       let imageUrl = '';
       if (image?.uri) {
         const response = await fetch(image.uri);
@@ -109,7 +125,7 @@ const ProviderSignUp = () => {
         await storageRef.put(blob);
         imageUrl = await storageRef.getDownloadURL();
       }
-
+  
       await firestore().collection('providers').doc(userId).set({
         name,
         email,
@@ -119,15 +135,23 @@ const ProviderSignUp = () => {
         experience,
         availability,
         address,
-        imageUrl,
+        imageUrl: imageUrl || '', // Default to empty string if no image
+        location: location ? {
+          latitude: location.latitude,
+          longitude: location.longitude,
+        } : null,
       });
-
+  
+      // Update user profile with name
+      await auth().currentUser?.updateProfile({ displayName: name });
+  
       Alert.alert('Success', 'Account created successfully');
       navigation.navigate('ProviderLogin');
     } catch (error: any) {
       Alert.alert('Error', error.message || 'Something went wrong');
     }
   };
+
 
   return (
     <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : undefined} style={{ flex: 1 }}>

@@ -8,7 +8,7 @@ export type AuthStackParamList = {
     ProviderSignUp: undefined;
     CustomerDrawer: undefined;
     ProviderDrawer: undefined;
-    ProviderProfile: undefined;
+    ProviderProfile: { provider: { id: number; name: string; profession: string; mobile_number: string; email: string; fees: number; rating: number; experience_years: number; location: string; availability: string; verified: boolean; reviews: { reviewer: string; comment: string; rating: number; }[]; latitude: number; longitude: number; image_url: string; } };
     CustomerDrawerNavigator: undefined;
     ProviderDrawerNavigator: undefined;
     CustomerHome: undefined;

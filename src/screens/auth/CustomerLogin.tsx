@@ -13,8 +13,7 @@ import {
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { updateProfile, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../../../firebase/config';
+import auth from '@react-native-firebase/auth';
 import { AuthStackParamList } from '../../types';
 
 type NavigationProp = NativeStackNavigationProp<AuthStackParamList>;
@@ -56,10 +55,9 @@ const CustomerLogin = () => {
       }
 
       try {
-        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-        await updateProfile(userCredential.user, {
-          displayName: name,
-        });
+        const userCredential = await auth().createUserWithEmailAndPassword(email, password);
+        
+        await auth().currentUser?.updateProfile({ displayName: name });
 
         Alert.alert('Account created! You can now log in.');
         setIsSignUp(false);
@@ -68,7 +66,7 @@ const CustomerLogin = () => {
       }
     } else {
       try {
-        await signInWithEmailAndPassword(auth, email, password);
+        await auth().signInWithEmailAndPassword(email, password);
         // navigation.navigate('CustomerDrawerNavigator');
       } catch (error: any) {
         Alert.alert('Login failed', error.message);

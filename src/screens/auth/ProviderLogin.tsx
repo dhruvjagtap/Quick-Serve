@@ -8,14 +8,10 @@ import {
   Alert,
   KeyboardAvoidingView,
   Platform,
+  ActivityIndicator,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  updateProfile,
-} from 'firebase/auth';
-import { auth } from '../../../firebase/config';
+import auth from '@react-native-firebase/auth'; // Import auth from Firebase React Native SDK
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { AuthStackParamList } from '../../types';
 
@@ -30,6 +26,7 @@ const ProviderLogin: React.FC = () => {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [confirmPassword, setConfirmPassword] = useState<string>('');
+  const [loading, setLoading] = useState<boolean>(false);
 
   const toggleMode = () => {
     setIsSignUp(!isSignUp);
@@ -56,22 +53,41 @@ const ProviderLogin: React.FC = () => {
         return;
       }
 
+      // Start loading state
+      setLoading(true);
+
       try {
-        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-        await updateProfile(userCredential.user, { displayName: name });
+        // Sign up using Firebase auth (React Native SDK)
+        const userCredential = await auth().createUserWithEmailAndPassword(email, password);
+        await userCredential.user?.updateProfile({ displayName: name });
         Alert.alert('Success', 'Provider account created!');
         setIsSignUp(false);
-      } catch (error: unknown) {
-        const errorMessage = error instanceof Error ? error.message : 'Something went wrong.';
+        // Clear form after successful signup
+        setName('');
+        setPhone('');
+        setEmail('');
+        setPassword('');
+        setConfirmPassword('');
+      } catch (error: any) {
+        const errorMessage = error.message || 'Something went wrong.';
         Alert.alert('Sign Up Failed', errorMessage);
+      } finally {
+        setLoading(false);
       }
     } else {
+      // Start loading state
+      setLoading(true);
+
       try {
-        await signInWithEmailAndPassword(auth, email, password);
-        // navigation.navigate("ProviderDrawerNavigator")
-      } catch (error: unknown) {
-        const errorMessage = error instanceof Error ? error.message : 'Something went wrong.';
+        // Sign in using Firebase auth (React Native SDK)
+        await auth().signInWithEmailAndPassword(email, password);
+        // Navigate to the dashboard or provider-specific screen after successful login
+        navigation.navigate("ProviderDrawerNavigator");
+      } catch (error: any) {
+        const errorMessage = error.message || 'Something went wrong.';
         Alert.alert('Login Failed', errorMessage);
+      } finally {
+        setLoading(false);
       }
     }
   };
@@ -127,10 +143,14 @@ const ProviderLogin: React.FC = () => {
       )}
 
       <TouchableOpacity style={styles.button} onPress={handleAuth}>
-        <Text style={styles.buttonText}>{isSignUp ? 'Continue' : 'Login'}</Text>
+        {loading ? (
+          <ActivityIndicator size="small" color="#fff" />
+        ) : (
+          <Text style={styles.buttonText}>{isSignUp ? 'Continue' : 'Login'}</Text>
+        )}
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => navigation.navigate('ProviderSignUp')}>
+      <TouchableOpacity onPress={() => toggleMode()}>
         <Text style={styles.toggleText}>
           {isSignUp ? 'Already have an account? Login' : "Don't have an account? Sign Up"}
         </Text>

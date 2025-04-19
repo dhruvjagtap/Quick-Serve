@@ -1,4 +1,4 @@
-// screens/CustomerSignUp.js
+// screens/CustomerSignUp.tsx
 
 import React, { useState } from 'react';
 import {
@@ -12,12 +12,16 @@ import {
   Platform,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
-import { auth, db } from '../../../firebase/config';
-import { doc, setDoc } from 'firebase/firestore';
+import auth from '@react-native-firebase/auth';
+import firestore from '@react-native-firebase/firestore';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+
+import { AuthStackParamList } from '../../types';
+
+type NavigationProp = NativeStackNavigationProp<AuthStackParamList>;
 
 const CustomerSignUp = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProp>();
 
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
@@ -37,26 +41,24 @@ const CustomerSignUp = () => {
     }
 
     try {
-      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const userCredential = await auth().createUserWithEmailAndPassword(email, password);
 
-      await updateProfile(userCredential.user, { displayName: name });
+      // Set displayName (optional — native SDK doesn’t always update immediately)
+      await userCredential.user.updateProfile({ displayName: name });
 
-      await setDoc(doc(db, 'users', userCredential.user.uid), {
+      await firestore().collection('users').doc(userCredential.user.uid).set({
         name,
         email,
         phone,
         role: 'customer',
-        createdAt: new Date(),
+        createdAt: firestore.FieldValue.serverTimestamp(),
       });
 
       Alert.alert('Success', 'Account created successfully!');
-      navigation.navigate('CustomerLogin' as never);
-    } catch (error: unknown) {
-      let errorMessage = 'Something went wrong.';
-      if (error instanceof Error) {
-        errorMessage = error.message;
-      }
-      Alert.alert('Sign Up Failed', errorMessage);
+      navigation.navigate('CustomerLogin');
+    } catch (error: any) {
+      console.error(error);
+      Alert.alert('Sign Up Failed', error.message || 'Something went wrong.');
     }
   };
 
@@ -107,7 +109,7 @@ const CustomerSignUp = () => {
         <Text style={styles.buttonText}>Continue</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => navigation.navigate('CustomerLogin' as never)}>
+      <TouchableOpacity onPress={() => navigation.navigate('CustomerLogin')}>
         <Text style={styles.switchText}>Already have an account? Login</Text>
       </TouchableOpacity>
     </KeyboardAvoidingView>
@@ -116,6 +118,7 @@ const CustomerSignUp = () => {
 
 export default CustomerSignUp;
 
+// styles remain the same as you had
 const styles = StyleSheet.create({
   container: {
     flex: 1,

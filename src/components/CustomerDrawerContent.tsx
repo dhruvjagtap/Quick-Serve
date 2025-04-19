@@ -8,8 +8,8 @@ import {
   Image,
 } from 'react-native';
 import { DrawerContentScrollView } from '@react-navigation/drawer';
-import { auth, db } from '../../firebase/config';
-import { doc, getDoc } from 'firebase/firestore';
+import auth from '@react-native-firebase/auth'; // Firebase Auth for React Native
+import firestore from '@react-native-firebase/firestore'; // Firebase Firestore for React Native
 import categories from '../data/category.json';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
@@ -18,14 +18,15 @@ const CustomerDrawerContent = ({ navigation }: any) => {
 
   useEffect(() => {
     const fetchUserName = async () => {
-      const user = auth.currentUser;
+      const user = auth().currentUser;
       if (user) {
         try {
-          const userRef = doc(db, 'users', user.uid);
-          const userSnap = await getDoc(userRef);
-          if (userSnap.exists()) {
+          const userRef = firestore().doc(`users/${user.uid}`);
+          const userSnap = await userRef.get();
+
+          if (userSnap.exists) {
             const userData = userSnap.data();
-            setUserName(userData.name || user.email || '');
+            setUserName(userData?.name || user.email || '');
           } else {
             setUserName(user.email || '');
           }
@@ -47,12 +48,17 @@ const CustomerDrawerContent = ({ navigation }: any) => {
   };
 
   const handleLogout = () => {
-    auth.signOut().then(() => {
-      navigation.reset({
-        index: 0,
-        routes: [{ name: 'Welcome' }],
+    auth()
+      .signOut()
+      .then(() => {
+        navigation.reset({
+          index: 0,
+          routes: [{ name: 'Welcome' }],
+        });
+      })
+      .catch((error) => {
+        console.error('Error signing out: ', error);
       });
-    });
   };
 
   return (
